@@ -1,5 +1,4 @@
 # Electoral-Leadership-Performance_Index
-African Leadership-performance  measuring agency
 
 Good governance and effective service delivery at the
 county level are pivotal to Kenya's socio-economic
