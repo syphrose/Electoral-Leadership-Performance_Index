@@ -35,5 +35,5 @@ and challenges of their respective constituencies.
 The rest of this document therefore outlines our
 approach, budget, and timeline for the CGPI study,
 emphasizing the importance of transparency,
-inclusivity, and public participation throoghout the
-project
+inclusivity, and public participation throughout the
+project.
