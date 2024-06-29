@@ -10,12 +10,57 @@
       src="https://kit.fontawesome.com/452d5e3228.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      /* Styles for the portfolio section */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .sub-title {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .work-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .work {
+        flex: 1 1 calc(33.333% - 20px); /* 3 items per row with 20px gap */
+        box-sizing: border-box;
+        position: relative;
+      }
+
+      .work img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .layer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <div id="header">
       <div class="container">
         <nav>
-          <img src="images/elpi icon.png" class="logo" />
+          <div class="logo">
+          <img src="images/logo-nav.png" class="logo" />
+          </div>
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -26,7 +71,7 @@
           <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-          <p>Electoral & Leadership Performance Index</p>
+          <p>ELECTORAL & LEADERSHIP PERFORMANCE INDEX</p>
           <h1>Inspiring Excellence and Accountability in Africa.</h1>
         </div>
       </div>
@@ -36,461 +81,242 @@
 
     <div id="about">
       <div class="container">
-        <!-- <div class="row"> -->
-          <!-- <div class="about-col-1"> -->
-            <!-- <img src="images/DSC_0802.psd mashh.jpg" /> -->
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Us</h1>
-            <p>
-              Electoral & Leadership Performance Index (elpi) is a premier
-              organization dedicated to inspiring leaders across electoral,
-              government, non-governmental organizations, and corporate sectors
-              in Africa to embrace and practice excellence and accountability.
-              elpi is uniquely positioned to assess and measure the performance
-              of African leaders through credible research anchored around the
-              United Nations Sustainable Development Goals (SDGs). elpi
-              envisions a future where leaders in Africa are inspired,
-              recognized, and motivated to excel in their respective fields. By
-              establishing credible performance measurement parameters,
-              organizing thematic events, and offering ongoing Monitoring &
-              Evaluation services, elpi seeks to catalyze a positive
-              transformation in leadership across the continent, ultimately
-              contributing to the realization of the United Nations Sustainable
-              Development Goals and fostering a culture of excellence and
-              accountability.
-            </p>
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Team
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                What they are saying
-              </p>
-              <p class="tab-links" onclick="opentab('education')">
-                Events gallery
-              </p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>UI/UX</span><br />Designing App/Web interfaces</li>
-                <li>
-                  <span>App Development</span><br />Building Android/iOS apps
-                </li>
-                <li><span>Web Development</span><br />Web App Development</li>
-              </ul>
-            </div>
-            <div class="tab-contents active-tab" id="experience">
-              <ul>
-                <li><span>2024</span><br />Business Management at Alison</li>
-                <li>
-                  <span>2023-2024</span><br />Fullstack Development at Holberton
-                  School
-                </li>
-                <li>
-                  <span>2022</span><br />Front-End Development at Moringa School
-                </li>
-                <li>
-                  <span>2020</span><br />Computer Packages at NewTech Computer
-                  College
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents active-tab" id="education">
-              <ul>
-                <li><span>2024</span><br />Certificate from ALX-Africa.</li>
-                <li>
-                  <span>2022</span><br />Front-End Development training at
-                  Moringa School.
-                </li>
-                <li>
-                  <span>2020</span><br />Certificate from NewTech College.
-                </li>
-              </ul>
-            </div>
-          </div>
+        <!-- Remove or uncomment the about-col-1 if needed -->
+        <!-- <div class="about-col-1"> -->
+          <!-- <img src="images/DSC_0802.psd mashh.jpg" /> -->
+        <!-- </div> -->
+        <div class="about-col-2">
+          <h1 class="sub-title">About Us</h1>
+          <p>
+            Electoral & Leadership Performance Index (elpi) is a premier
+            organization dedicated to inspiring leaders across electoral,
+            government, non-governmental organizations, and corporate sectors
+            in Africa to embrace and practice excellence and accountability.
+            elpi is uniquely positioned to assess and measure the performance
+            of African leaders through credible research anchored around the
+            United Nations Sustainable Development Goals (SDGs). elpi
+            envisions a future where leaders in Africa are inspired,
+            recognized, and motivated to excel in their respective fields. By
+            establishing credible performance measurement parameters,
+            organizing thematic events, and offering ongoing Monitoring &
+            Evaluation services, elpi seeks to catalyze a positive
+            transformation in leadership across the continent, ultimately
+            contributing to the realization of the United Nations Sustainable
+            Development Goals and fostering a culture of excellence and
+            accountability.
+          </p>
+          <!-- <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Team</p>
+            <p class="tab-links" onclick="opentab('experience')">What they are saying</p>
+            <p class="tab-links" onclick="opentab('education')">Events gallery</p>
+          </div> -->
         </div>
       </div>
     </div>
-
+    
+        
     <!--------------services---------->
 
     <div id="services">
       <div class="container">
         <h1 class="sub-title">Awards</h1>
-        <p>Rewarding good performance presented in thematic information areas</p>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
+        <p>Rewarding good performance presented in thematic information areas.</p>
+        <div class="services-list grid-container">
+            <!-- <i class="fa-solid fa-code"></i> -->
             <div class="card">
-              <input id="ch" type="checkbox" />
+                <img src="images/Healthcare.png" alt="Health">
               <h2>Health Care</h2>
               <p>
-                I am responsible for creating the look, layout, and features of
-                a website. I work closely with clients or project managers to
-                understand the goals and requirements of the website and then
-                use my creativity and technical skills to design a site that
-                meets those needs. Some of my roles include,..
+                Hospitals, Healthcare facilities, Healthcare 
+                practitioners, vaccines, medicines etc.
               </p>
-              <div class="content">
-                <p>
-                  Conceptualizing and Designing: Creating the overall look and
-                  feel of the website, including graphics, colors, and fonts.
-                  This may inv  y6olve designing logos, images, and other visual
-                  elements. <br />
-                  Layout and Structure: Organizing the content of the website
-                  and designing the layout of each page to ensure a logical flow
-                  and easy navigation. <br />Responsive Design: Designing
-                  websites that are optimized for various devices and screen
-                  sizes, including desktops, laptops, tablets, and smartphones.
-                  <br />
-                  Collaboration: Working closely with developers, content
-                  creators, and other team members to ensure that the website
-                  meets the needs of the client or project. <br />
-                  Testing and Troubleshooting: Conducting testing to identify
-                  and fix any issues with the website's design, layout, or
-                  functionality. <br />
-                  Keeping Up with Trends: Staying updated on current design
-                  trends, technologies, and best practices to ensure that
-                  websites are visually appealing and functional.
-                </p>
-                <label for="ch">Show less</label>
               </div>
-              <label for="ch">Read more</label>
             </div>
           </div>
-          <div>
-            <i class="fa-solid fa-crop-simple"></i>
+          <div class="container">
+          <div class="services-list grid-container">
             <div class="card">
-              <input id="ch" type="checkbox" />
+                <img src="images/Education 1.jpg" alt="Learning">
               <h2>Education</h2>
               <p>
-                Responsible for creating intuitive, user-friendly designs that
-                enhance the overall user experience of digital products. I play
-                a crucial role in ensuring that products are not only visually
-                appealing but also functional and easy to use. Some of the roles
-                I do are,....
+                Primary schools, Secondary schools, 
+                Colleges, Universities, TVETS
               </p>
-              <div class="content">
-                <p>
-                  User Interface (UI) Design: As a UI designer I am responsible
-                  for the visual elements of a product. This includes creating
-                  the look and feel of the product, such as layout, colors,
-                  typography, and interactive elements. <br />
-                  User Experience (UX) Design: I focus on the overall experience
-                  of the user when interacting with the product. This involves
-                  understanding user needs, conducting user research, creating
-                  user personas, and designing user flows and wireframes. <br />
-                  Prototyping and Testing: As a UI/UX designer I create
-                  prototypes of the product to test usability and gather
-                  feedback from users. I use this feedback to iterate on the
-                  design and improve the overall user experience. <br />
-                  Collaboration: I work closely with product managers,
-                  developers, and other stakeholders to ensure that the design
-                  meets the requirements and goals of the project. <br />
-                  Accessibility: I will also consider accessibility principles
-                  to ensure that the product can be used by people with
-                  disabilities. <br />
-                  Stay Updated: I have to stay updated with the latest design
-                  trends, tools, and technologies to continuously improve my
-                  designs and stay competitive in the field.
-                </p>
-                <label for="ch">Show less</label>
               </div>
-              <label for="ch">Read more</label>
+              </div>
             </div>
-          </div>
-          <div>
-            <i class="fa-brands fa-app-store-ios"></i>
+            <div class="container">
+            <div class="services-list grid-container">
             <div class="card">
-              <img src="images/Roads & Infrastructure 3.jpg" alt="" style="width: 10%; padding-right: 30px;">
-              <input id="ch" type="checkbox" />
+              <img src="images/Roads & Infrastructure 3.jpg" alt="Roads">
+              <!-- <input id="ch" type="checkbox" /> -->
               <h2>Roads & Infrastructure</h2>
               <p>
-                As an app designer, I get involved in creating the visual and
-                interactive elements of a mobile application. For more info,...
+                Tarmac roads, All-weather roads, 
+                Sidewalks, street lighting etc
               </p>
-              <div class="content">
-                <p>
-                  I can specifically focus on designing mobile applications
-                  (apps) for smartphones and tablets. Like a UI/UX designer,
-                  <br />
-                  an app designer is responsible for creating the visual and
-                  interactive elements of an app, ensuring that it is visually
-                  appealing, easy to use, and provides a positive user
-                  experience. App designers <br />
-                  may also need to consider platform-specific design guidelines
-                  (e.g., iOS Human Interface Guidelines, Material Design) when
-                  designing apps for different mobile operating systems.
-                </p>
-                <!-- <label for="ch">Show less</label> -->
               </div>
-              <!-- <label for="ch">Read more</label> -->
+              </div>
             </div>
-          </div>
-          <div>
-            <i class="fa-brands fa-app-store-ios"></i>
+            <div class="container">
+            <div class="services-list grid-container">
             <div class="card">
-              <input id="ch" type="checkbox" />
+              <!-- <div class="flex-item"> -->
+                <img src="images/Wash image 1.jpg" alt="Clean water">
+              <!-- <input id="ch" type="checkbox" /> -->
               <h2>Water, Sanitation & Hygiene</h2>
               <p>
-                As an app designer, I get involved in creating the visual and
-                interactive elements of a mobile application. For more info,...
-              </p>
-              <div class="content">
-                <p>
-                  I can specifically focus on designing mobile applications
-                  (apps) for smartphones and tablets. Like a UI/UX designer,
-                  <br />
-                  an app designer is responsible for creating the visual and
-                  interactive elements of an app, ensuring that it is visually
-                  appealing, easy to use, and provides a positive user
-                  experience. App designers <br />
-                  may also need to consider platform-specific design guidelines
-                  (e.g., iOS Human Interface Guidelines, Material Design) when
-                  designing apps for different mobile operating systems.
-                </p>
-                <label for="ch">Show less</label>
-              </div>
-              <label for="ch">Read more</label>
+                Toilets, drainage, sewerage, handwashing, Open 
+                defecation etc.
+            </p> 
             </div>
-        </div>
-        <div>
-          <i class="fa-brands fa-app-store-ios"></i>
+            </div>
+           </div>
+          <!-- <i class="fa-brands fa-app-store-ios"></i> -->
+          <div class="container">
+          <div class="services-list grid-container">
           <div class="card">
-            <input id="ch" type="checkbox" />
+            <!-- <div class="flex-item"> -->
+              <img src="images/Climate Change 1.jpg" alt="Climate">
+            <!-- <input id="ch" type="checkbox" /> -->
             <h2>Climate change</h2>
             <p>
-              As an app designer, I get involved in creating the visual and
-              interactive elements of a mobile application. For more info,...
+              Climate action, emission reduction, solar variations etc.
             </p>
-            <div class="content">
-              <p>
-                I can specifically focus on designing mobile applications
-                (apps) for smartphones and tablets. Like a UI/UX designer,
-                <br />
-                an app designer is responsible for creating the visual and
-                interactive elements of an app, ensuring that it is visually
-                appealing, easy to use, and provides a positive user
-                experience. App designers <br />
-                may also need to consider platform-specific design guidelines
-                (e.g., iOS Human Interface Guidelines, Material Design) when
-                designing apps for different mobile operating systems.
-              </p>
-              <label for="ch">Show less</label>
-            </div>
-            <label for="ch">Read more</label>
           </div>
-      </div>
-      <div>
-        <i class="fa-brands fa-app-store-ios"></i>
+          </div>
+          </div>
+        <!-- <i class="fa-brands fa-app-store-ios"></i> -->
+        <div class="container">
+        <div class="services-list grid-container">
         <div class="card">
-          <input id="ch" type="checkbox" />
+          <!-- <div class="flex-item"> -->
+            <img src="images/patrol.jpg" alt="Security">
+          <!-- <input id="ch" type="checkbox" /> -->
           <h2>Safety & Security</h2>
           <p>
-            As an app designer, I get involved in creating the visual and
-            interactive elements of a mobile application. For more info,...
+            Crime, hazards, risks, Police, night 
+            lighting, threat analysis etc
           </p>
-          <div class="content">
-            <p>
-              I can specifically focus on designing mobile applications
-              (apps) for smartphones and tablets. Like a UI/UX designer,
-              <br />
-              an app designer is responsible for creating the visual and
-              interactive elements of an app, ensuring that it is visually
-              appealing, easy to use, and provides a positive user
-              experience. App designers <br />
-              may also need to consider platform-specific design guidelines
-              (e.g., iOS Human Interface Guidelines, Material Design) when
-              designing apps for different mobile operating systems.
-            </p>
-            <label for="ch">Show less</label>
           </div>
-          <label for="ch">Read more</label>
-        </div>
-    </div>
-    <div>
-      <i class="fa-brands fa-app-store-ios"></i>
-      <div class="card">
-        <img src="images/" alt="">
-        <input id="ch" type="checkbox" />
-        <h2>Industry & Manufacturing</h2>
-        <p>
-          As an app designer, I get involved in creating the visual and
-          interactive elements of a mobile application. For more info,...
-        </p>
-        <div class="content">
-          <p>
-            I can specifically focus on designing mobile applications
-            (apps) for smartphones and tablets. Like a UI/UX designer,
-            <br />
-            an app designer is responsible for creating the visual and
-            interactive elements of an app, ensuring that it is visually
-            appealing, easy to use, and provides a positive user
-            experience. App designers <br />
-            may also need to consider platform-specific design guidelines
-            (e.g., iOS Human Interface Guidelines, Material Design) when
-            designing apps for different mobile operating systems.
-          </p>
-          <!-- <label for="ch">Show less</label> -->
-        </div>
-        <!-- <label for="ch">Read more</label> -->
+          </div>
       </div>
-    </div>
-    <div>
-      <i class="fa-brands fa-app-store-ios"></i>
+      <!-- <i class="fa-brands fa-app-store-ios"></i> -->
+      <div class="container">
+      <div class="services-list grid-container">
       <div class="card">
-        <input id="ch" type="checkbox" />
+        <!-- <div class="flex-item"> -->
+          <img src="images/Sports 1.jpg" alt="Sports">
+        <!-- <input id="ch" type="checkbox" /> -->
+        <h2>Sports </h2>
+        <p>
+          Games(football, Rugby, basketball, tennis etc.), 
+          athletics, swimming etc 
+        </p>
+      </div>
+        </div>
+        </div>
+      <!-- <i class="fa-brands fa-app-store-ios"></i> -->
+      <div class="container">
+      <div class="services-list grid-container">
+      <div class="card">
+        <!-- <div class="flex-item"> -->
+          <img src="images/Blue Economy 2.jpg" alt="Fishing">
+        <!-- <input id="ch" type="checkbox" /> -->
         <h2>Blue Economy</h2>
         <p>
-          As an app designer, I get involved in creating the visual and
-          interactive elements of a mobile application. For more info,...
+          Maritimebiotechnology, Aquaculture, 
+          fishing, mineral resources, maritime tourism etc.
         </p>
-        <div class="content">
-          <p>
-            I can specifically focus on designing mobile applications
-            (apps) for smartphones and tablets. Like a UI/UX designer,
-            <br />
-            an app designer is responsible for creating the visual and
-            interactive elements of an app, ensuring that it is visually
-            appealing, easy to use, and provides a positive user
-            experience. App designers <br />
-            may also need to consider platform-specific design guidelines
-            (e.g., iOS Human Interface Guidelines, Material Design) when
-            designing apps for different mobile operating systems.
-          </p>
-          <label for="ch">Show less</label>
-        </div>
-        <label for="ch">Read more</label>
       </div>
-    </div>
-    <div>
-      <i class="fa-brands fa-app-store-ios"></i>
+        </div>
+      </div>
+      <!-- <i class="fa-brands fa->app-store-ios"></i -->
+        <div class="container">
+        <div class="services-list grid-container">
       <div class="card">
-        <input id="ch" type="checkbox" />
+        <!-- <div class="flex-item"> -->
+          <img src="images/Reduced inequality 1.jpg" alt="Equality">
+        <!-- <input id="ch" type="checkbox" /> -->
         <h2>Reduced Inequality</h2>
         <p>
-          As an app designer, I get involved in creating the visual and
-          interactive elements of a mobile application. For more info,...
+          Gender inequality, PWDs, Youth,marginalized groups 
+          and the disadvantaged.
         </p>
-        <div class="content">
-          <p>
-            I can specifically focus on designing mobile applications
-            (apps) for smartphones and tablets. Like a UI/UX designer,
-            <br />
-            an app designer is responsible for creating the visual and
-            interactive elements of an app, ensuring that it is visually
-            appealing, easy to use, and provides a positive user
-            experience. App designers <br />
-            may also need to consider platform-specific design guidelines
-            (e.g., iOS Human Interface Guidelines, Material Design) when
-            designing apps for different mobile operating systems.
-          </p>
-          <label for="ch">Show less</label>
-        </div>
-        <label for="ch">Read more</label>
       </div>
-    </div>
-    <div>
-      <i class="fa-brands fa-app-store-ios"></i>
+        </div>
+      </div>
+      <!-- <i class="fa-brands fa-app-store-ios"></i> -->
+      <div class="container">
+      <div class="services-list grid-container">
       <div class="card">
-        <input id="ch" type="checkbox" />
+        <!-- <div class="flex-item"> -->
+          <img src="images/Skilled labor 1.jpg" alt="Economic Growth">
+        <!-- <input id="ch" type="checkbox" /> -->
         <h2>Productive Employment & Economic Growth</h2>
         <p>
-          As an app designer, I get involved in creating the visual and
-          interactive elements of a mobile application. For more info,...
+          Skilled labor, youth, labor force, banking, insurance etc.
         </p>
-        <div class="content">
-          <p>
-            I can specifically focus on designing mobile applications
-            (apps) for smartphones and tablets. Like a UI/UX designer,
-            <br />
-            an app designer is responsible for creating the visual and
-            interactive elements of an app, ensuring that it is visually
-            appealing, easy to use, and provides a positive user
-            experience. App designers <br />
-            may also need to consider platform-specific design guidelines
-            (e.g., iOS Human Interface Guidelines, Material Design) when
-            designing apps for different mobile operating systems.
-          </p>
-          <label for="ch">Show less</label>
-        </div>
-        <label for="ch">Read more</label>
       </div>
-    </div>
-    <div>
-      <i class="fa-brands fa-app-store-ios"></i>
+      </div>
+      </div>
+      <!-- <i class="fa-brands fa-app-store-ios"></i> -->
+      <div class="container">
+      <div class="services-list grid-container">
       <div class="card">
-        <input id="ch" type="checkbox" />
+        <!-- <div class="flex-item"> -->
+          <img src="images/Food security & Agriculture 2.jpg" alt="Agriculture">
+        <!-- <input id="ch" type="checkbox" /> -->
         <h2>Food security & Agriculture</h2>
         <p>
-          As an app designer, I get involved in creating the visual and
-          interactive elements of a mobile application. For more info,...
+          Crop farming, Animal husbandry, horticulture,
+          , fertilizers, irrigation , market access, crop rotation etc.
         </p>
-        <div class="content">
-          <p>
-            I can specifically focus on designing mobile applications
-            (apps) for smartphones and tablets. Like a UI/UX designer,
-            <br />
-            an app designer is responsible for creating the visual and
-            interactive elements of an app, ensuring that it is visually
-            appealing, easy to use, and provides a positive user
-            experience. App designers <br />
-            may also need to consider platform-specific design guidelines
-            (e.g., iOS Human Interface Guidelines, Material Design) when
-            designing apps for different mobile operating systems.
-          </p>
-          <label for="ch">Show less</label>
-        </div>
-        <label for="ch">Read more</label>
       </div>
-    </div>
-    <div>
-      <i class="fa-brands fa-app-store-ios"></i>
+        </div>
+      </div>
+      <!-- <i class="fa-brands fa-app-store-ios"></i> -->
+      
+      <div class="container">
+        <div class="services-list grid-container">
       <div class="card">
-        <input id="ch" type="checkbox" />
+        <!-- <div class="flex-item"> -->
+          <img src="images/tour it.jpg" alt="Tourism">
+        <!-- <input id="ch" type="checkbox" /> -->
         <h2>Tourism</h2>
         <p>
-          As an app designer, I get involved in creating the visual and
-          interactive elements of a mobile application. For more info,...
+          Attractions, accessibility, accommodation, 
+          amenities, activities, price level of commodities
+          , language differences etc.                 
         </p>
-        <div class="content">
-          <p>
-            I can specifically focus on designing mobile applications
-            (apps) for smartphones and tablets. Like a UI/UX designer,
-            <br />
-            an app designer is responsible for creating the visual and
-            interactive elements of an app, ensuring that it is visually
-            appealing, easy to use, and provides a positive user
-            experience. App designers <br />
-            may also need to consider platform-specific design guidelines
-            (e.g., iOS Human Interface Guidelines, Material Design) when
-            designing apps for different mobile operating systems.
-          </p>
-          <label for="ch">Show less</label>
-        </div>
-        <label for="ch">Read more</label>
       </div>
-    </div>
+        </div>
+      </div>
 
     <!---------------Team members---------------->
 
     <div id="portfolio">
       <div class="container">
         <h1 class="sub-title">Our Team</h1>
+        <p>Dedicated and open-minded personnel ready to walk with you in this amazing
+          journey.
+        </p>
         <div class="work-list">
           <div class="work">
-            <img src="images/Screenshot (81).png" alt="" />
+            <img src="images/Tony.jpg" alt="Anthony" />
             <div class="layer">
               <h3>Anthony Ndirangu</h3>
               <p>
-                Market research professional with over 10+ experience.
-              </p>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
+                Market research professional with over 10 years of experience in conducting
+                 qualitative and quantitative research, data analysis, and strategic insights. 
+                 Proven track record in delivering actionable insights that drive business growth 
+                 and inform decision-making.
+              </p> 
+              <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
             </div>
           </div>
           <div class="work">
-            <img src="images/Screenshot (80).png" alt="" />
+            <img src="images/aggrey img.png" alt="Aggrey" />
             <div class="layer">
               <h3>Aggrey Wabulwenyi</h3>
               <p>
@@ -499,43 +325,44 @@
                 informed by data, behavioral economics, predictive analytics and Market
                 trends.
               </p>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
+               <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
             </div>
           </div>
           <div class="work">
-            <img src="images/Screenshot (79).png" alt="" />
+            <img src="images/Screenshot (68).png" alt="Jerry" />
             <div class="layer">
               <h3>Jerry Orode</h3>
               <p>
                A dynamic individual experienced in coordinating marketing communication
                activities across the KCB Bank Group. Well versed in handling a multi facet
                range of initiatives that incorporate brand management, 
-               advertising, public relations, sponsorship and events, promotions
-               and digital media. 
+               advertising. 
               </p>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
+              <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
             </div>
           </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <!-- <a href="#" class="btn">See more</a> -->
       </div>
     </div>
+  </div>
   </div>
 
     <!--------------------Gallery--------------------->
 
-    <div id="portfolio">
+   <!-------<div id="portfolio">
       <div class="container">
-        <h1 class="sub-title">Events gallery</h1>
+        <h1 class="sub-title">What They Are Saying</h1>
         <div class="work-list">
           <div class="work">
-            <img src="images/Screenshot (81).png" alt="" />
-            <div class="layer">
-              <h3>Furniture App</h3>
+            <!-- <img src="images/Screenshot (81).png" alt="" /> -->
+            <!----<div class="layer">
+              <h3>An outstanding platform!</h3>
               <p>
-                Noble Nest began as a vision to curate a collection of
-                furnishings that transcends the ordinary, offering a touch of
-                opulence to every living space.
+                "ELPI's commitment to excellence and accountability is evident in
+                everything they do. Their research is thorough and reliable, providing 
+                valuable insights for leaders across sectors. We are greatful for their
+                partnership and the impacts it has had on our organization."
               </p>
               <a href="#"><i class="fa-solid fa-link"></i></a>
             </div>
@@ -543,12 +370,11 @@
           <div class="work">
             <img src="images/Screenshot (80).png" alt="" />
             <div class="layer">
-              <h3>Research profile</h3>
+              <h3>An absolute tracking instrument!</h3>
               <p>
-                ELPI is a premier organization dedicated to inspiring leaders
-                across electoral, government, non-governmental organizations,
-                and corporate sectors in Africa to embrace and practice
-                excellence and accountability.
+                "ELPI has been instrumental in helping us track and improve our performance
+                as a government agency. Their Monitoring & Evaluation services are thorough 
+                and insightful, providing us with valuable data to enhance our service delivery"
               </p>
               <a href="#"><i class="fa-solid fa-link"></i></a>
             </div>
@@ -556,20 +382,20 @@
           <div class="work">
             <img src="images/Screenshot (79).png" alt="" />
             <div class="layer">
-              <h3>Vyakula website</h3>
+              <h3>Award well deserved</h3>
               <p>
-                Vyakula is a food delivery website that provides users with a
-                wide variety of local cuisines to select from. Its main aimis to
-                provide rich tapestry of local cuisines, we aimed to celebrate
-                diversity through our menu.
+                "ELPI's recognition events are truly motivating. Being acknowledged for our work
+                in the electoral sector has inspired us to push even harder for excellence. It's
+                 encouraging to see our efforts recognized and celebrated by such a prestigious 
+                 organization"
               </p>
               <a href="#"><i class="fa-solid fa-link"></i></a>
             </div>
           </div>
-        </div>
-        <a href="#" class="btn">See more</a>
-      </div>
-    </div>
+        </div>->
+        <!-- <a href="#" class="btn">See more</a> -->
+      <!----</div>
+    </div>----->
 
     <!--------------contact------------>
 
@@ -581,7 +407,7 @@
             <p><i class="fas fa-paper-plane"></i> email info.elpi@gmail.com</p>
             <p><i class="fas fa-phone-square-alt"></i> 0722588184</p>
             <div class="social-icons">
-              <a href="https://web.facebook.com/"
+              <a href="https://web.facebook.com/groups/368059286083091/"
                 ><i class="fa-brands fa-square-facebook"></i
               ></a>
               <a href="https://twitter.com/_syphrose"
@@ -591,16 +417,14 @@
                 ><i class="fa-brands fa-square-instagram"></i
               ></a>
               <a
-                href="https://www.linkedin.com/in/syphrose-wabulwenyi-475486244/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
+                href="https://www.linkedin.com/company/101667222/admin/dashboard/"
+                ><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <a
+            <!-- <a
               href="images/SYPHROSE WABULWENYI RESUME.docx.pdf"
               download
               class="btn btn2"
-              >Download CV</a
-            >
+              >Download Leaflet</a> -->
           </div>
           <div class="contact-right">
             <form name="submit-to-google-sheet">
@@ -623,7 +447,7 @@
         </div>
       </div>
       <div class="copyright">
-        <p>Copyright @ ElpiAfrica.</p>
+        <p>Copyright@elpiafrica_2024</p>
       </div>
     </div>
 
