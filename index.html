@@ -10,59 +10,17 @@
       src="https://kit.fontawesome.com/452d5e3228.js"
       crossorigin="anonymous"
     ></script>
-    <style>
-      /* Styles for the portfolio section */
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-
-      .sub-title {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-
-      .work-list {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 20px;
-      }
-
-      .work {
-        flex: 1 1 calc(33.333% - 20px); /* 3 items per row with 20px gap */
-        box-sizing: border-box;
-        position: relative;
-      }
-
-      .work img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-
-      .layer {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0, 0, 0, 0.7);
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-      }
-    </style>
   </head>
   <body>
     <div id="header">
       <div class="container">
+        <!-- Navbar Section -->
         <nav>
           <div class="logo">
-          <img src="images/logo-nav.png" class="logo" />
+            <img src="images/logo-nav.png" class="logo" />
           </div>
           <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
+            <li><a href="home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -70,431 +28,309 @@
           </ul>
           <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
-        <div class="header-text">
-          <p>ELECTORAL & LEADERSHIP PERFORMANCE INDEX</p>
-          <h1>Inspiring Excellence and Accountability in Africa.</h1>
-        </div>
-      </div>
-    </div>
-
-    <!-------------------about--------------->
-
-    <div id="about">
-      <div class="container">
-        <!-- Remove or uncomment the about-col-1 if needed -->
-        <!-- <div class="about-col-1"> -->
-          <!-- <img src="images/DSC_0802.psd mashh.jpg" /> -->
-        <!-- </div> -->
-        <div class="about-col-2">
-          <h1 class="sub-title">About Us</h1>
-          <p>
-            Electoral & Leadership Performance Index (elpi) is a premier
-            organization dedicated to inspiring leaders across electoral,
-            government, non-governmental organizations, and corporate sectors
-            in Africa to embrace and practice excellence and accountability.
-            elpi is uniquely positioned to assess and measure the performance
-            of African leaders through credible research anchored around the
-            United Nations Sustainable Development Goals (SDGs). elpi
-            envisions a future where leaders in Africa are inspired,
-            recognized, and motivated to excel in their respective fields. By
-            establishing credible performance measurement parameters,
-            organizing thematic events, and offering ongoing Monitoring &
-            Evaluation services, elpi seeks to catalyze a positive
-            transformation in leadership across the continent, ultimately
-            contributing to the realization of the United Nations Sustainable
-            Development Goals and fostering a culture of excellence and
-            accountability.
-          </p>
-          <!-- <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">Team</p>
-            <p class="tab-links" onclick="opentab('experience')">What they are saying</p>
-            <p class="tab-links" onclick="opentab('education')">Events gallery</p>
-          </div> -->
-        </div>
-      </div>
-    </div>
-    
-        
-    <!--------------services---------->
-
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">Awards</h1>
-        <p>Rewarding good performance presented in thematic information areas.</p>
-        <div class="services-list grid-container">
-            <!-- <i class="fa-solid fa-code"></i> -->
-            <div class="card">
-                <img src="images/Healthcare.png" alt="Health">
-              <h2>Health Care</h2>
-              <p>
-                Hospitals, Healthcare facilities, Healthcare 
-                practitioners, vaccines, medicines etc.
-              </p>
-              </div>
+        <!-- Header Section -->
+        <header id="header">
+          <div class="container">
+            <div class="header-text">
+              <h1>ELECTORAL & LEADERSHIP PERFORMANCE INDEX</h1>
+              <p>Inspiring Excellence and Accountability in Africa.</p>
             </div>
           </div>
+        </header>
+
+        <!---------About Section--------------->
+        <section id="about">
           <div class="container">
-          <div class="services-list grid-container">
-            <div class="card">
-                <img src="images/Education 1.jpg" alt="Learning">
-              <h2>Education</h2>
-              <p>
-                Primary schools, Secondary schools, 
-                Colleges, Universities, TVETS
-              </p>
-              </div>
-              </div>
-            </div>
-            <div class="container">
-            <div class="services-list grid-container">
-            <div class="card">
-              <img src="images/Roads & Infrastructure 3.jpg" alt="Roads">
-              <!-- <input id="ch" type="checkbox" /> -->
-              <h2>Roads & Infrastructure</h2>
-              <p>
-                Tarmac roads, All-weather roads, 
-                Sidewalks, street lighting etc
-              </p>
-              </div>
-              </div>
-            </div>
-            <div class="container">
-            <div class="services-list grid-container">
-            <div class="card">
-              <!-- <div class="flex-item"> -->
-                <img src="images/Wash image 1.jpg" alt="Clean water">
-              <!-- <input id="ch" type="checkbox" /> -->
-              <h2>Water, Sanitation & Hygiene</h2>
-              <p>
-                Toilets, drainage, sewerage, handwashing, Open 
-                defecation etc.
-            </p> 
-            </div>
-            </div>
-           </div>
-          <!-- <i class="fa-brands fa-app-store-ios"></i> -->
-          <div class="container">
-          <div class="services-list grid-container">
-          <div class="card">
-            <!-- <div class="flex-item"> -->
-              <img src="images/Climate Change 1.jpg" alt="Climate">
-            <!-- <input id="ch" type="checkbox" /> -->
-            <h2>Climate change</h2>
+            <h2 class="sub-title">About Us</h2>
             <p>
-              Climate action, emission reduction, solar variations etc.
+              Electoral & Leadership Performance Index (elpi) is a premier
+              organization dedicated to inspiring leaders across electoral,
+              government, non-governmental organizations, and corporate sectors
+              in Africa to embrace and practice excellence and accountability.
+              elpi is uniquely positioned to assess and measure the performance
+              of African leaders through credible research anchored around the
+              United Nations Sustainable Development Goals (SDGs). elpi
+              envisions a future where leaders in Africa are inspired,
+              recognized, and motivated to excel in their respective fields. By
+              establishing credible performance measurement parameters,
+              organizing thematic events, and offering ongoing Monitoring &
+              Evaluation services, elpi seeks to catalyze a positive
+              transformation in leadership across the continent, ultimately
+              contributing to the realization of the United Nations Sustainable
+              Development Goals and fostering a culture of excellence and
+              accountability.
             </p>
           </div>
-          </div>
-          </div>
-        <!-- <i class="fa-brands fa-app-store-ios"></i> -->
-        <div class="container">
-        <div class="services-list grid-container">
-        <div class="card">
-          <!-- <div class="flex-item"> -->
-            <img src="images/patrol.jpg" alt="Security">
-          <!-- <input id="ch" type="checkbox" /> -->
-          <h2>Safety & Security</h2>
-          <p>
-            Crime, hazards, risks, Police, night 
-            lighting, threat analysis etc
-          </p>
-          </div>
-          </div>
-      </div>
-      <!-- <i class="fa-brands fa-app-store-ios"></i> -->
-      <div class="container">
-      <div class="services-list grid-container">
-      <div class="card">
-        <!-- <div class="flex-item"> -->
-          <img src="images/Sports 1.jpg" alt="Sports">
-        <!-- <input id="ch" type="checkbox" /> -->
-        <h2>Sports </h2>
-        <p>
-          Games(football, Rugby, basketball, tennis etc.), 
-          athletics, swimming etc 
-        </p>
-      </div>
-        </div>
-        </div>
-      <!-- <i class="fa-brands fa-app-store-ios"></i> -->
-      <div class="container">
-      <div class="services-list grid-container">
-      <div class="card">
-        <!-- <div class="flex-item"> -->
-          <img src="images/Blue Economy 2.jpg" alt="Fishing">
-        <!-- <input id="ch" type="checkbox" /> -->
-        <h2>Blue Economy</h2>
-        <p>
-          Maritimebiotechnology, Aquaculture, 
-          fishing, mineral resources, maritime tourism etc.
-        </p>
-      </div>
-        </div>
-      </div>
-      <!-- <i class="fa-brands fa->app-store-ios"></i -->
-        <div class="container">
-        <div class="services-list grid-container">
-      <div class="card">
-        <!-- <div class="flex-item"> -->
-          <img src="images/Reduced inequality 1.jpg" alt="Equality">
-        <!-- <input id="ch" type="checkbox" /> -->
-        <h2>Reduced Inequality</h2>
-        <p>
-          Gender inequality, PWDs, Youth,marginalized groups 
-          and the disadvantaged.
-        </p>
-      </div>
-        </div>
-      </div>
-      <!-- <i class="fa-brands fa-app-store-ios"></i> -->
-      <div class="container">
-      <div class="services-list grid-container">
-      <div class="card">
-        <!-- <div class="flex-item"> -->
-          <img src="images/Skilled labor 1.jpg" alt="Economic Growth">
-        <!-- <input id="ch" type="checkbox" /> -->
-        <h2>Productive Employment & Economic Growth</h2>
-        <p>
-          Skilled labor, youth, labor force, banking, insurance etc.
-        </p>
-      </div>
-      </div>
-      </div>
-      <!-- <i class="fa-brands fa-app-store-ios"></i> -->
-      <div class="container">
-      <div class="services-list grid-container">
-      <div class="card">
-        <!-- <div class="flex-item"> -->
-          <img src="images/Food security & Agriculture 2.jpg" alt="Agriculture">
-        <!-- <input id="ch" type="checkbox" /> -->
-        <h2>Food security & Agriculture</h2>
-        <p>
-          Crop farming, Animal husbandry, horticulture,
-          , fertilizers, irrigation , market access, crop rotation etc.
-        </p>
-      </div>
-        </div>
-      </div>
-      <!-- <i class="fa-brands fa-app-store-ios"></i> -->
-      
-      <div class="container">
-        <div class="services-list grid-container">
-      <div class="card">
-        <!-- <div class="flex-item"> -->
-          <img src="images/tour it.jpg" alt="Tourism">
-        <!-- <input id="ch" type="checkbox" /> -->
-        <h2>Tourism</h2>
-        <p>
-          Attractions, accessibility, accommodation, 
-          amenities, activities, price level of commodities
-          , language differences etc.                 
-        </p>
-      </div>
-        </div>
-      </div>
+        </section>
 
-    <!---------------Team members---------------->
+        <!--------Awards Section---------->
 
-    <div id="portfolio">
-      <div class="container">
-        <h1 class="sub-title">Our Team</h1>
-        <p>Dedicated and open-minded personnel ready to walk with you in this amazing
-          journey.
-        </p>
-        <div class="work-list">
-          <div class="work">
-            <img src="images/Tony.jpg" alt="Anthony" />
-            <div class="layer">
-              <h3>Anthony Ndirangu</h3>
-              <p>
-                Market research professional with over 10 years of experience in conducting
-                 qualitative and quantitative research, data analysis, and strategic insights. 
-                 Proven track record in delivering actionable insights that drive business growth 
-                 and inform decision-making.
-              </p> 
-              <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+        <section id="services">
+          <div class="container">
+            <h2 class="sub-title">Awards</h2>
+            <p>
+              Rewarding good performance presented in thematic information
+              areas.
+            </p>
+            <div class="services-list grid-container">
+              <div class="grid-item">
+                <img src="images/Healthcare.png" alt="Health" />
+                <h2>Health Care</h2>
+                <p><h3>
+                  Hospitals, Healthcare facilities, Healthcare practitioners,
+                  vaccines, medicines etc.</h3>
+                </p>
+              </div>
+              <div class="grid-item">
+                <img src="images/Education 1.jpg" alt="Learning" />
+                <h2>Education</h2>
+                <p><h3>
+                  Primary schools, Secondary schools, Colleges, Universities,
+                  TVETS.</h3>
+                </p>
+              </div>
+              <div class="grid-item">
+                <img src="images/Roads & Infrastructure 3.jpg" alt="Roads" />
+                <h2>Roads & Infrastructure</h2>
+                <p><h3>
+                  Tarmac roads, All-weather roads, Sidewalks, street lighting
+                  etc </h3>
+                </p>
+              </div>
+              <div class="grid-item">
+                <img src="images/Wash image 1.jpg" alt="Clean water" />
+                <h2>Water, Sanitation & Hygiene</h2>
+                <p><h3>
+                  Toilets, drainage, sewerage, handwashing, Open defecation etc.
+                </h3>
+                </p>
+              </div>
+              <div class="grid-item">
+                <img src="images/Climate Change 1.jpg" alt="Climate" />
+                <!-- <input id="ch" type="checkbox" /> -->
+                <h2>Climate change</h2>
+                <p><h3>Climate action, emission reduction, solar variations etc.</h3></p>
+              </div>
+              <div class="grid-item">
+                <img src="images/patrol.jpg" alt="Security" />
+                <h2>Safety & Security</h2>
+                <p>
+                  <h3>Crime, hazards, risks, Police, night lighting, threat analysis
+                  etc </h3>
+                </p>
+              </div>
+              <div class="grid-item">
+                <!-- <div class="flex-item"> -->
+                <img src="images/Sports 1.jpg" alt="Sports" />
+                <h2>Sports</h2>
+                <p><h3>
+                  Games(football, Rugby, basketball, tennis etc.), athletics,
+                  swimming etc </h3>
+                </p>
+              </div>
+              <div class="grid-item">
+                <!-- <div class="flex-item"> -->
+                <img src="images/Blue Economy 2.jpg" alt="Fishing" />
+                <h2>Blue Economy</h2>
+                <p>
+                  <h3>Maritimebiotechnology, Aquaculture, fishing, mineral
+                  resources, maritime tourism etc.</h3>
+                </p>
+              </div>
+              <div class="grid-item">
+                <!-- <div class="flex-item"> -->
+                <img src="images/Reduced inequality 1.jpg" alt="Equality" />
+                <h2>Reduced Inequality</h2>
+                <p>
+                  <h3>Gender inequality, PWDs, Youth,marginalized groups and the
+                  disadvantaged.</h3>
+                </p>
+              </div>
+              <div class="grid-item">
+                <img src="images/Skilled labor 1.jpg" alt="Economic Growth" />
+                <!-- <input id="ch" type="checkbox" /> -->
+                <h2>Productive Employment & Economic Growth</h2>
+                <p>
+                  <h3>Skilled labor, youth, labor force, banking, insurance etc.
+                  </h3>
+                </p>
+              </div>
+              <div class="grid-item">
+                <img
+                  src="images/Food security & Agriculture 2.jpg"
+                  alt="Agriculture"
+                />
+                <h2>Food security & Agriculture</h2>
+                <p>
+                  <h3>Crop farming, Animal husbandry, horticulture, , fertilizers,
+                  irrigation , market access, crop rotation etc.</h3>
+                </p>
+              </div>
+              <div class="grid-item">
+                <img src="images/tour it.jpg" alt="Tourism" />
+                <h2>Tourism</h2>
+                <p>
+                  <h3>Attractions, accessibility, accommodation, amenities,
+                  activities, price level of commodities , language differences
+                  etc.</h3>
+                </p>
+              </div>
             </div>
           </div>
-          <div class="work">
-            <img src="images/aggrey img.png" alt="Aggrey" />
-            <div class="layer">
-              <h3>Aggrey Wabulwenyi</h3>
+        </section>
+
+        <!---------Team members------->
+        <section id="team">
+          <div class="container">
+            <h1 class="sub-title">Our Team</h1>
+            <p>
+              Dedicated and open-minded personnel ready to walk with you in this
+              amazing journey.
+            </p>
+            <div class="team-list grid-container">
+              <div class="grid-item">
+                <img src="images/Tony.jpg" alt="Anthony" />
+                <h2>Anthony Ndirangu</h2>
+                <p><h3>
+                  Market research professional with over 10 years of experience
+                  in conducting qualitative and quantitative research, data
+                  analysis, and strategic insights. Proven track record in
+                  delivering actionable insights that drive business growth and
+                  inform decision-making.</h3>
+                </p>
+              </div>
+              <div class="grid-item">
+                <img src="images/aggrey img.png" alt="Aggrey" />
+                <h2>Aggrey Wabulwenyi</h2>
+                <p><h3>
+                  I am a Marketing and Business Intelligence expert with over 12
+                  years of experience in shaping convesations for brands around
+                  market insights informed by data, behavioral economics,
+                  predictive analytics and Market trends.</h3>
+                </p>
+              </div>
+              <div class="grid-item">
+                <img src="images/Screenshot (68).png" alt="Jerry" />
+                <h2>Jerry Orode</h2>
+                <p><h3>
+                  A dynamic individual experienced in coordinating marketing
+                  communication activities across the KCB Bank Group. Well
+                  versed in handling a multi facet range of initiatives that
+                  incorporate brand management, advertising.</h3>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--------------------Gallery--------------------->
+
+        <!-------Contact  Section----->
+
+        <section id="contact">
+          <div class="container">
+            <div class="contact-left">
+              <h2 class="sub-title">Talk To Us</h2>
               <p>
-                I am a Marketing and Business Intelligence expert with over 12 years
-                of experience in shaping convesations for brands around market insights 
-                informed by data, behavioral economics, predictive analytics and Market
-                trends.
+                <i class="fas fa-paper-plane"></i>
+                <a href="mailto:info.elpi@gmail.com">info.elpi@gmail.com</a>
               </p>
-               <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+              <p><i class="fas fa-phone-square-alt"></i> 0722588184</p>
+              <div class="social-icons">
+                <a href="https://web.facebook.com/groups/368059286083091/"
+                  ><i class="fa-brands fa-square-facebook"></i
+                ></a>
+                <a href="https://twitter.com/_syphrose"
+                  ><i class="fa-brands fa-square-x-twitter"></i
+                ></a>
+                <a href="https://www.instagram.com/swabulwenyi/"
+                  ><i class="fa-brands fa-square-instagram"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/101667222/admin/dashboard/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+              <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                  <input
+                    type="text"
+                    name="Name"
+                    placeholder="Your Name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="Email"
+                    placeholder="Your email"
+                    required
+                  />
+                  <textarea
+                    name="Message"
+                    rows="6"
+                    placeholder="Your Message"
+                  ></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+              </div>
             </div>
           </div>
-          <div class="work">
-            <img src="images/Screenshot (68).png" alt="Jerry" />
-            <div class="layer">
-              <h3>Jerry Orode</h3>
-              <p>
-               A dynamic individual experienced in coordinating marketing communication
-               activities across the KCB Bank Group. Well versed in handling a multi facet
-               range of initiatives that incorporate brand management, 
-               advertising. 
-              </p>
-              <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
-            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+          <div class="container">
+            <p>&copy;2024 ELPi Africa. All rights reserved.</p>
           </div>
-        </div>
-        <!-- <a href="#" class="btn">See more</a> -->
+        </footer>
       </div>
-    </div>
-  </div>
-  </div>
 
-    <!--------------------Gallery--------------------->
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
-   <!-------<div id="portfolio">
-      <div class="container">
-        <h1 class="sub-title">What They Are Saying</h1>
-        <div class="work-list">
-          <div class="work">
-            <!-- <img src="images/Screenshot (81).png" alt="" /> -->
-            <!----<div class="layer">
-              <h3>An outstanding platform!</h3>
-              <p>
-                "ELPI's commitment to excellence and accountability is evident in
-                everything they do. Their research is thorough and reliable, providing 
-                valuable insights for leaders across sectors. We are greatful for their
-                partnership and the impacts it has had on our organization."
-              </p>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/Screenshot (80).png" alt="" />
-            <div class="layer">
-              <h3>An absolute tracking instrument!</h3>
-              <p>
-                "ELPI has been instrumental in helping us track and improve our performance
-                as a government agency. Their Monitoring & Evaluation services are thorough 
-                and insightful, providing us with valuable data to enhance our service delivery"
-              </p>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/Screenshot (79).png" alt="" />
-            <div class="layer">
-              <h3>Award well deserved</h3>
-              <p>
-                "ELPI's recognition events are truly motivating. Being acknowledged for our work
-                in the electoral sector has inspired us to push even harder for excellence. It's
-                 encouraging to see our efforts recognized and celebrated by such a prestigious 
-                 organization"
-              </p>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
-            </div>
-          </div>
-        </div>->
-        <!-- <a href="#" class="btn">See more</a> -->
-      <!----</div>
-    </div>----->
-
-    <!--------------contact------------>
-
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Talk To Us</h1>
-            <p><i class="fas fa-paper-plane"></i> email info.elpi@gmail.com</p>
-            <p><i class="fas fa-phone-square-alt"></i> 0722588184</p>
-            <div class="social-icons">
-              <a href="https://web.facebook.com/groups/368059286083091/"
-                ><i class="fa-brands fa-square-facebook"></i
-              ></a>
-              <a href="https://twitter.com/_syphrose"
-                ><i class="fa-brands fa-square-x-twitter"></i
-              ></a>
-              <a href="https://www.instagram.com/swabulwenyi/"
-                ><i class="fa-brands fa-square-instagram"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/company/101667222/admin/dashboard/"
-                ><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-            <!-- <a
-              href="images/SYPHROSE WABULWENYI RESUME.docx.pdf"
-              download
-              class="btn btn2"
-              >Download Leaflet</a> -->
-          </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>Copyright@elpiafrica_2024</p>
-      </div>
-    </div>
-
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
+        function opentab(tabname) {
+          for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+          }
+          for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
         }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
+      </script>
+
+      <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+          sidemenu.style.right = "0";
         }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-    </script>
+        function closemenu() {
+          sidemenu.style.right = "-200px";
+        }
+      </script>
 
-    <script>
-      var sidemenu = document.getElementById("sidemenu");
-
-      function openmenu() {
-        sidemenu.style.right = "0";
-      }
-      function closemenu() {
-        sidemenu.style.right = "-200px";
-      }
-    </script>
-
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbzoMGzz6TM--QAeKOEJt6HUGCdrTvBijiK4Mft0SjS9Tah0x3hj0lpQPb8BssCPPtbn/exec";
-      const form = document.forms["submit-to-google-sheet"];
-      const msg = document.getElementById("msg");
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "Message submitted successfully";
-            setTimeout(function () {
-              msg.innerHTML = "";
-            }, 5000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
+      <script>
+        const scriptURL =
+          "https://script.google.com/macros/s/AKfycbzoMGzz6TM--QAeKOEJt6HUGCdrTvBijiK4Mft0SjS9Tah0x3hj0lpQPb8BssCPPtbn/exec";
+        const form = document.forms["submit-to-google-sheet"];
+        const msg = document.getElementById("msg");
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          fetch(scriptURL, { method: "POST", body: new FormData(form) })
+            .then((response) => {
+              msg.innerHTML = "Message submitted successfully";
+              setTimeout(function () {
+                msg.innerHTML = "";
+              }, 5000);
+              form.reset();
+            })
+            .catch((error) => console.error("Error!", error.message));
+        });
+      </script>
+    </div>
   </body>
 </html>
