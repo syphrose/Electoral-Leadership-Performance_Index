@@ -97,14 +97,14 @@ nav ul li a:hover::after {
 /* ---------------------about------------------*/
 #about {
   text-decoration: none;
-  text-decoration-color: #fff;
-  text-shadow: 0px 1px #fff;
+  /* text-decoration-color: #fff; */
+  /* text-shadow: 0px 1px #fff; */
   font-style: normal;
   font-size: medium;
   font-family: "Poppins", sans-serif;
   padding: 80px 0;
-  color: #fff;
-  background-color: #051d0c;
+  color: black;
+  background-color: #fefffe;
 }
 
 .about-col-2 {
