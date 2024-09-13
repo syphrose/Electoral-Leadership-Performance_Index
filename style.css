@@ -82,12 +82,12 @@ nav ul li a:hover::after {
   width: 100%;
 }
 .header-text {
-  color: #fff;
+  color: white;
   margin-top: 20%;
   font-size: 22px;
 }
 .header-text p h1 {
-  color: #fff;
+  color: white;
   font-size: 40%;
   margin-top: 20px;
 }
@@ -105,6 +105,8 @@ nav ul li a:hover::after {
   padding: 80px 0;
   color: black;
   background-color: #fefffe;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .about-col-2 {
@@ -389,4 +391,56 @@ nav .fas {
   color: #104a20;
   margin-top: -0px;
   display: block;
+}
+
+/* Style the Services dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #adef7b;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #185228;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* Read more button*/
+.read-more-btn {
+  display: inline-block;
+  background-color: #6de056;
+  color: #051d0c;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #78dda2;
 }
