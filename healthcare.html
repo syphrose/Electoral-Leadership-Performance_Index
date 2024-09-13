@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HEALTHCARE AWARDS</title>
+    <link rel="stylesheet" href="health.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>HEALTHCARE AWARDS</h1>
+      <p>
+        Health care is a fundamental pillar of sustainable development and human
+        well-being. It is closely tied to the achievement of several Sustainable
+        Development Goals (SDGs), particularly SDG 3: "Good Health and
+        Well-being." Without a robust health care system, communities and
+        nations cannot thrive. Leaders who prioritize health care play a
+        critical role in ensuring that their populations have access to the
+        services and resources necessary for a healthy life.
+      </p>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+      <div class="card">
+        <!-- <img
+          src="images/healthcare-innovation.jpg"
+          alt="Human Capital Development"
+        /> -->
+        <h2>Human Capital Development</h2>
+        <p>Health is directly linked to human capital development.</p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Human Capital Development')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img
+          src="images/hospitals.jpg"
+          alt="Resilience in the Face of Pandemics"
+        /> -->
+        <h2>Resilience in the Face of Pandemics</h2>
+        <p>
+          The COVID-19 pandemic has highlighted the critical importance of
+          resilient health care systems.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Resilience in the Face of Pandemics')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img
+          src="images/medical-practitioners.jpg"
+          alt="Reducing Health Inequities"
+        /> -->
+        <h2>Reducing Health Inequities</h2>
+        <p>
+          Health care is a key area where inequities often manifest,
+          particularly in access to services, quality of care, and health
+          outcomes.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Reducing Health Inequities')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img
+          src="images/medical-practitioners.jpg"
+          alt="Driving Innovation in Health Care"
+        /> -->
+        <h2>Driving Innovation in Health Care</h2>
+        <p>
+          Innovation in health care is essential for addressing the complex
+          challenges faced by the sector.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Driving Innovation in Health Care')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img
+          src="images/medical-practitioners.jpg"
+          alt="Building Sustainable Health Systems" -->
+        />
+        <h2>Building Sustainable Health Systems</h2>
+        <p>
+          Sustainable health systems are those that are resilient, adaptable,
+          and capable of providing high-quality care to all individuals,
+          regardless of their circumstances.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Building Sustainable Health Systems')"
+        >
+          Read More
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 Healthcare Awards. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Function to open the modal and set content
+      function openModal(category) {
+        const modal = document.getElementById("myModal");
+        const title = document.getElementById("modal-title");
+        const description = document.getElementById("modal-description");
+
+        // Set the content based on category
+        if (category === "Human Capital Development") {
+          title.innerText = "Human Capital Development";
+          description.innerHTML = `
+          A healthy population is more productive, can contribute more effectively to the economy, and
+           is better positioned to pursue education and employment opportunities. Leaders who invest in
+            health care are essentially investing in the future of their nations.
+                `;
+        } else if (category === "Resilience in the Face of Pandemics") {
+          title.innerText = "Resilience in the Face of Pandemics";
+          description.innerHTML = `
+          Leaders who have strengthened health care infrastructures, promoted vaccination campaigns, & ensured
+           the availability of essential medical supplies have saved lives & mitigated the long-term impacts of
+            the pandemic.
+                `;
+        } else if (category === "Reducing Health Inequities") {
+          title.innerText = "Reducing Health Inequities";
+          description.innerHTML = `
+          Leaders who have worked to reduce these disparities, whether through policy reform, expanding access
+           to marginalized communities, or improving the quality of care are making significant strides toward
+            achieving equity and social justice.
+                `;
+        } else if (category === "Driving Innovation in Health Care") {
+          title.innerText = "Driving Innovation in Health Care";
+          description.innerHTML = `
+          From emerging diseases to the need for more efficient health systems. Leaders who have championed 
+          innovative solutions whether through digital health technologies, new treatment protocols, or 
+          health financing models are paving the way for a healthier future.
+                `;
+        } else if (category === "Driving Innovation in Health Care") {
+          title.innerText = "Driving Innovation in Health Care";
+          description.innerHTML = `
+          Leaders who have successfully built or reformed health systems to be more sustainable are not only
+           addressing immediate health needs but are also ensuring that future generations will continue to
+            have access to essential health services.
+                `;
+        }
+
+        // Show the modal
+        modal.style.display = "block";
+      }
+
+      // Function to close the modal
+      function closeModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "none";
+      }
+
+      // Close modal when clicking outside of the modal content
+      window.onclick = function (event) {
+        const modal = document.getElementById("myModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

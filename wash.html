@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WASH Awards</title>
+    <link rel="stylesheet" href="wash.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>WASH AWARDS</h1>
+      <p>
+        Access to clean water, adequate sanitation, and hygiene practices is not
+        only a basic human right but also a cornerstone of public health and
+        economic development. Leaders who prioritize WASH initiatives are
+        addressing some of the most pressing challenges facing communities
+        across Africa, from reducing disease burdens to promoting gender
+        equality and ensuring environmental sustainability. Recognizing
+        leadership in WASH underscores the importance of these essential
+        services in building healthy, resilient, and prosperous societies.
+      </p>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+      <div class="card">
+        <!-- <img
+          src="images/healthcare-innovation.jpg"
+          alt="Healthcare Innovation"
+        /> -->
+        <h2>Promoting Public Health</h2>
+        <p>WASH is integral to public health.</p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Promoting Public Health')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img
+          src="images/healthcare-innovation.jpg"
+          alt="Healthcare Innovation"
+        /> -->
+        <h2>Supporting Economic Development</h2>
+        <p>
+          Access to WASH services is directly linked to economic productivity.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Supporting Economic Development')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img
+          src="images/healthcare-innovation.jpg"
+          alt="Healthcare Innovation"
+        /> -->
+        <h2>Advancing Gender Equality</h2>
+        <p>WASH is critical for advancing gender equality.</p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Advancing Gender Equality')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
+        <h2>Ensuring Environmental Sustainability</h2>
+        <p>
+          Sustainable management of water resources and sanitation systems is
+          essential for environmental protection.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Ensuring Environmental Sustainability')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img
+          src="images/medical-practitioners.jpg"
+          alt="Healthcare Practitioners"
+        /> -->
+        <h2>Enhancing Social Equity and Justice</h2>
+        <p>
+          Access to WASH services is a key determinant of social equity and
+          inclusion.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Enhancing Social Equity and Justice')"
+        >
+          Read More
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 WASH Awards. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Function to open the modal and set content
+      function openModal(category) {
+        const modal = document.getElementById("myModal");
+        const title = document.getElementById("modal-title");
+        const description = document.getElementById("modal-description");
+
+        // Set the content based on category
+        if (category === "Promoting Public Health") {
+          title.innerText = "Promoting Public Health";
+          description.innerHTML = `
+          Lack of access to clean water and proper sanitation is a leading cause of preventable diseases such 
+          as cholera, diarrhea, and other waterborne illnesses, which disproportionately affect vulnerable 
+          populations, particularly children. Leaders who have championed WASH initiatives have made significant 
+          strides in improving public health, reducing healthcare costs, and saving lives.
+                `;
+        } else if (category === "Supporting Economic Development") {
+          title.innerText = "Supporting Economic Development";
+          description.innerHTML = `
+          When communities have reliable access to clean water and sanitation, they spend less time collecting 
+          water and more time on productive activities, such as education and work. Leaders who invest in WASH 
+          infrastructure are not only improving the quality of life for their citizens but also boosting economic 
+          development by enhancing productivity and reducing the burden of water-related diseases.  
+                `;
+        } else if (category === "Advancing Gender Equality") {
+          title.innerText = "Advancing Gender Equality";
+          description.innerHTML = `
+          In many parts of Africa, women and girls are responsible for collecting water, a task that often consumes
+           hours each day and can expose them to dangers. By improving access to water and sanitation, leaders can
+            reduce the time burden on women and girls, allowing them to pursue education and employment opportunities.
+            Furthermore, proper sanitation facilities in schools can improve attendance and retention rates among girls,
+             particularly during menstruation.
+                `;
+        } else if (category === "Ensuring Environmental Sustainability") {
+          title.innerText = "Ensuring Environmental Sustainability";
+          description.innerHTML = `
+          Leaders who prioritize WASH are also contributing to the sustainable use of natural resources, reducing 
+          pollution, and mitigating the impacts of climate change. By recognizing their efforts, ELPI will highlight
+           the interconnectedness of WASH and environmental sustainability, encouraging more leaders to adopt 
+           integrated approaches to resource management. 
+                `;
+        } else if (category === "Enhancing Social Equity and Justice") {
+          title.innerText = "Enhancing Social Equity and Justice";
+          description.innerHTML = `
+          Marginalized and underserved communities often lack access to these essential services, leading to 
+          disparities in health and economic outcomes. Leaders who have worked to ensure that WASH services
+           are accessible to all, regardless of socio-economic status or location, are making significant 
+           contributions to social justice and equity.
+                `;
+        }
+
+        // Show the modal
+        modal.style.display = "block";
+      }
+
+      // Function to close the modal
+      function closeModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "none";
+      }
+
+      // Close modal when clicking outside of the modal content
+      window.onclick = function (event) {
+        const modal = document.getElementById("myModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

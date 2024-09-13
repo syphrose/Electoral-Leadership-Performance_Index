@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roads & Infrastructure</title>
+    <link rel="stylesheet" href="roads & infrastructure.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>ROADS & INFRASTRUCTURE AWARDS</h1>
+      <p>
+        Infrastructure development, particularly in roads, is a backbone of any
+        thriving economy. It connects people, facilitates trade, and enables
+        access to essential services such as education, health care, and
+        employment. Leaders who prioritize infrastructure are not only
+        addressing immediate needs but also laying the foundation for long-term
+        growth and development. Recognizing such leaders underscores the
+        importance of visionary planning and investment in the physical
+        frameworks that support societal progress.
+      </p>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+      <div class="card">
+        <!-- <img
+          src="images/healthcare-innovation.jpg"
+          alt="Healthcare Innovation"
+        /> -->
+        <h2>Driving Economic Growth</h2>
+        <p>Roads and infrastructure are key drivers of economic activity.</p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Driving Economic Growth')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
+        <h2>Enhancing Accessibility and Connectivity</h2>
+        <p>
+          Infrastructure development enhances accessibility and connectivity,
+          linking rural and urban areas and integrating isolated regions into
+          the national economy.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Enhancing Accessibility and Connectivity')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img
+          src="images/medical-practitioners.jpg"
+          alt="Healthcare Practitioners"
+        /> -->
+        <h2>Improving Quality of Life</h2>
+        <p>
+          Quality infrastructure significantly improves the standard of living.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Improving Quality of Life')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
+        <h2>Promoting Regional Integration</h2>
+        <p>
+          In a continent as diverse as Africa, regional integration is key to
+          unlocking economic potential.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Promoting Regional Integration')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
+        <h2>Building Resilience and Sustainability</h2>
+        <p>
+          Infrastructure resilience is crucial in the face of climate change and
+          natural disasters.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Building Resilience and Sustainability')"
+        >
+          Read More
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 Roads & Infrastructure Awards. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Function to open the modal and set content
+      function openModal(category) {
+        const modal = document.getElementById("myModal");
+        const title = document.getElementById("modal-title");
+        const description = document.getElementById("modal-description");
+
+        // Set the content based on category
+        if (category === "Driving Economic Growth") {
+          title.innerText = "Driving Economic Growth";
+          description.innerHTML = `
+          Efficient transportation networks reduce the cost of moving goods and people, stimulate trade,
+           attract investment, and open up markets. Leaders who have successfully implemented major 
+           infrastructure projects have directly contributed to their countries’ economic expansion 
+           and competitiveness on the global stage.
+                `;
+        } else if (category === "Enhancing Accessibility and Connectivity") {
+          title.innerText = "Enhancing Accessibility and Connectivity";
+          description.innerHTML = `
+          By building and maintaining roads, bridges, and transport systems, leaders have facilitated 
+          the movement of goods, services, and people, which is crucial for national unity and economic
+           inclusivity.
+                `;
+        } else if (category === "Improving Quality of Life") {
+          title.innerText = "Improving Quality of Life";
+          description.innerHTML = `
+          Leaders who prioritize infrastructure development are directly improving the quality of life 
+          for their citizens by reducing travel times, improving safety, and ensuring that basic 
+          services are within reach.
+                `;
+        } else if (category === "Promoting Regional Integration") {
+          title.innerText = "Promoting Regional Integration";
+          description.innerHTML = `
+          Cross-border infrastructure projects, such as highways and rail networks, enhance trade and 
+          cooperation between neighboring countries. Leaders who champion regional infrastructure 
+          initiatives are paving the way for greater economic integration, political stability, 
+          and shared prosperity across Africa.   
+                `;
+        } else if (category === "Building Resilience and Sustainability") {
+          title.innerText = "Building Resilience and Sustainability";
+          description.innerHTML = `
+          Leaders who have invested in sustainable infrastructure—such as climate-resilient roads,
+           renewable energy projects, and sustainable urban planning—are not only addressing current
+            needs but are also preparing their nations for future challenges. Recognizing these efforts
+             is essential to promoting long-term sustainability and resilience in African societies.
+                `;
+        }
+
+        // Show the modal
+        modal.style.display = "block";
+      }
+
+      // Function to close the modal
+      function closeModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "none";
+      }
+
+      // Close modal when clicking outside of the modal content
+      window.onclick = function (event) {
+        const modal = document.getElementById("myModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

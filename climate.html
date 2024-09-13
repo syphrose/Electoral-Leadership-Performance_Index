@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Climate Awards</title>
+    <link rel="stylesheet" href="climate.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>CLIMATE AWARDS</h1>
+      <p>
+        Climate change is not just an environmental issue; it is a
+        socio-economic crisis that impacts every aspect of life, from food
+        security to health, economic stability, and social equity. African
+        leaders who prioritize climate action are not only safeguarding the
+        environment but also ensuring the long-term resilience and prosperity of
+        their nations. Recognizing these leaders emphasizes the importance of
+        integrating climate action into governance, development planning, and
+        policy-making.
+      </p>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+      <div class="card">
+        <!-- <img
+          src="images/healthcare-innovation.jpg"
+          alt="Healthcare Innovation"
+        /> -->
+        <h2>Mitigating the Impact of Climate Change</h2>
+        <p>
+          Africa is highly vulnerable to the impacts of climate change,
+          including extreme weather events, droughts, floods, and rising
+          temperatures.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Mitigating the Impact of Climate Change')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
+        <h2>Promoting Sustainable Development</h2>
+        <p>Climate action is integral to sustainable development.</p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Promoting Sustainable Development')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
+        <h2>Strengthening Food and Water Security</h2>
+        <p>
+          Climate change poses significant threats to food and water security in
+          Africa, where agriculture is a primary source of livelihood for
+          millions.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Strengthening Food and Water Security')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
+        <h2>Protecting Biodiversity and Natural Ecosystems</h2>
+        <p>
+          Africa is home to some of the world’s most diverse ecosystems and
+          species, many of which are under threat due to climate change.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Protecting Biodiversity and Natural Ecosystems')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img
+          src="images/medical-practitioners.jpg"
+          alt="Healthcare Practitioners"
+        /> -->
+        <h2>Enhancing Social Equity and Inclusion</h2>
+        <p>
+          Climate change disproportionately affects the poorest and most
+          vulnerable communities, exacerbating inequalities.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Enhancing Social Equity and Inclusion')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img
+          src="images/medical-practitioners.jpg"
+          alt="Healthcare Practitioners"
+        /> -->
+        <h2>Fostering Innovation and Green Growth</h2>
+        <p>
+          The transition to a low-carbon economy presents opportunities for
+          innovation and job creation.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Fostering Innovation and Green Growth')"
+        >
+          Read More
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 Climate Action Awards. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Function to open the modal and set content
+      function openModal(category) {
+        const modal = document.getElementById("myModal");
+        const title = document.getElementById("modal-title");
+        const description = document.getElementById("modal-description");
+
+        // Set the content based on category
+        if (category === "Mitigating the Impact of Climate Change") {
+          title.innerText = "Mitigating the Impact of Climate Change";
+          description.innerHTML = `
+          Leaders who have taken proactive steps to mitigate these impacts whether through policies, innovations,
+           or partnerships are protecting communities from immediate and long-term harm. Recognizing their 
+           efforts encourages other leaders to adopt and implement similar strategies, essential for reducing 
+           vulnerability and building resilience across the continent.
+                `;
+        } else if (category === "Promoting Sustainable Development") {
+          title.innerText = "Promoting Sustainable Development";
+          description.innerHTML = `
+          Leaders who prioritize environmental sustainability ensure that economic growth does not come at the 
+          expense of natural resources or the well-being of future generations. By investing in renewable energy, 
+          sustainable agriculture, and green infrastructure, these leaders are driving economic growth while preserving
+           the environment. Highlighting their achievements reinforces the message that true development is only possible
+            when it is sustainable.
+                `;
+        } else if (category === "Strengthening Food and Water Security") {
+          title.innerText = "Strengthening Food and Water Security";
+          description.innerHTML = `
+          Leaders who have championed climate-smart agriculture, water conservation, and sustainable land management 
+          are helping to secure food and water supplies for their populations. Recognizing these efforts is crucial 
+          because it emphasizes the link between climate action and the fundamental needs of food and water, 
+          inspiring others to take similar steps.
+                `;
+        } else if (
+          category === "Protecting Biodiversity and Natural Ecosystems"
+        ) {
+          title.innerText = "Protecting Biodiversity and Natural Ecosystems";
+          description.innerHTML = `
+          Leaders who have worked to protect and restore natural habitats, enforce conservation laws, and promote
+           biodiversity are safeguarding the continent’s rich natural heritage. Recognizing their contributions 
+           highlights the importance of preserving biodiversity for ecological balance, tourism, and future 
+           generations.
+
+                `;
+        } else if (category === "Enhancing Social Equity and Inclusion") {
+          title.innerText = "Enhancing Social Equity and Inclusion";
+          description.innerHTML = `
+          Leaders who focus on climate action with an emphasis on social justice ensure that the needs of
+           these communities are addressed. By implementing inclusive policies and programs that support
+            climate adaptation and mitigation, these leaders are promoting equity and protecting those most
+             at risk. This recognition underscores the importance of climate justice in leadership.
+                `;
+        } else if (category === "Fostering Innovation and Green Growth") {
+          title.innerText = "Fostering Innovation and Green Growth";
+          description.innerHTML = `
+          Leaders who have embraced green growth, supported the development of clean technologies, and 
+          fostered innovation in sectors like energy, transport, and industry are paving the way for a 
+          sustainable economic future. Recognizing these pioneers sends a strong message that climate 
+          action is not only about environmental protection but also about economic opportunity and 
+          technological advancement.
+                `;
+        }
+
+        // Show the modal
+        modal.style.display = "block";
+      }
+
+      // Function to close the modal
+      function closeModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "none";
+      }
+
+      // Close modal when clicking outside of the modal content
+      window.onclick = function (event) {
+        const modal = document.getElementById("myModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

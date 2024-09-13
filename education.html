@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDUCATION AWARDS</title>
+    <link rel="stylesheet" href="education.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>EDUCATION AWARDS</h1>
+      <p>
+        Education is foundational to the success and advancement of any society.
+        It equips individuals with the knowledge, skills, and values necessary
+        to participate effectively in the economy, engage in civic life, and
+        lead healthy, fulfilling lives. Leaders who prioritize education are
+        investing in the future of their nations by empowering the next
+        generation to overcome challenges, innovate, and drive progress.
+      </p>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+      <div class="card">
+        <!-- <img src="images/quality-education.jpg" alt="Catalyst for Economic Growth" /> -->
+        <h2>Catalyst for Economic Growth</h2>
+        <p>
+          Education is a powerful driver of economic growth. Countries with
+          higher levels of education tend to have higher productivity, more
+          innovation, and faster economic development.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Catalyst for Economic Growth')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
+        <h2>Reducing Inequality</h2>
+        <p>
+          Education is one of the most effective tools for reducing inequality.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Reducing Inequality')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img
+          src="images/medical-practitioners.jpg"
+          alt="Healthcare Practitioners"
+        /> -->
+        <h2>Fostering Innovation and Creativity</h2>
+        <p>
+          Education nurtures the creativity and innovation that are essential
+          for solving the complex challenges facing Africa today.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Fostering Innovation and Creativity')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/quality-education.jpg" alt="Catalyst for Economic Growth" /> -->
+        <h2>Promoting Peace and Stability</h2>
+        <p>
+          Education plays a vital role in promoting peace and stability by
+          fostering understanding, tolerance, and respect among individuals and
+          communities.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Promoting Peace and Stability')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/quality-education.jpg" alt="Catalyst for Economic Growth" /> -->
+        <h2>Building Sustainable Societies</h2>
+        <p>
+          Education is key to building sustainable societies. It empowers
+          individuals to make informed decisions about health, the environment,
+          and civic participation.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Building Sustainable Societies')"
+        >
+          Read More
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 Education Awards. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Function to open the modal and set content
+      function openModal(category) {
+        const modal = document.getElementById("myModal");
+        const title = document.getElementById("modal-title");
+        const description = document.getElementById("modal-description");
+
+        // Set the content based on category
+        if (category === "Catalyst for Economic Growth") {
+          title.innerText = "Catalyst for Economic Growth";
+          description.innerHTML = `
+          Leaders who have invested in education by improving access, quality, and relevance are laying 
+          the groundwork for sustainable economic progress. 
+                `;
+        } else if (category === "Reducing Inequality") {
+          title.innerText = "Reducing Inequality";
+          description.innerHTML = `
+          By providing equal access to quality education for all, regardless of gender, socio-economic 
+          status, or location, leaders can level the playing field and create opportunities for upward
+           mobility. Recognizing leaders who have made strides in promoting educational equity is crucial
+            in highlighting the role of education in social justice.
+                `;
+        } else if (category === "Fostering Innovation and Creativity") {
+          title.innerText = "Fostering Innovation and Creativity";
+          description.innerHTML = `
+          Leaders who have supported educational initiatives that emphasize critical thinking, problem-solving,
+           and entrepreneurship are equipping young people with the skills they need to drive future innovations 
+           and contribute to the global knowledge economy.    
+                `;
+        } else if (category === "Promoting Health and Well-being") {
+          title.innerText = "Promoting Health and Well-being";
+          description.innerHTML = `
+          Leaders who have prioritized education in conflict-affected areas, or who have used education as a tool
+           for reconciliation, deserve to be recognized for their contributions to peacebuilding and social cohesion.
+                `;
+        } else if (category === "Building Sustainable Societies") {
+          title.innerText = "Building Sustainable Societies";
+          description.innerHTML = `
+          Leaders who have integrated sustainability into educational curricula and have promoted education for 
+          sustainable development are helping to ensure that future generations are equipped to tackle global 
+          challenges like climate change and resource scarcity.
+                `;
+        }
+
+        // Show the modal
+        modal.style.display = "block";
+      }
+
+      // Function to close the modal
+      function closeModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "none";
+      }
+
+      // Close modal when clicking outside of the modal content
+      window.onclick = function (event) {
+        const modal = document.getElementById("myModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

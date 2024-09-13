@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security Awards</title>
+    <link rel="stylesheet" href="security.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>SAFETY & SECURITY AWARDS</h1>
+      <p>
+        Safety and security are the bedrock of a stable society. Without them,
+        development is stifled, investment is deterred, and the social fabric
+        begins to fray. African leaders who prioritize safety and security
+        ensure that their nations are protected from internal and external
+        threats, ranging from crime and violence to terrorism and political
+        instability. Recognizing these leaders highlights the essential role
+        that safety and security play in achieving sustainable development and
+        social harmony.
+      </p>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+      <div class="card">
+        <!-- <img
+          src="images/healthcare-innovation.jpg"
+          alt="Healthcare Innovation"
+        /> -->
+        <h2>Ensuring Stable Governance and Social Order</h2>
+        <p>
+          A secure environment is crucial for stable governance and the
+          effective functioning of institutions.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Ensuring Stable Governance and Social Order')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
+        <h2>Fostering Economic Growth and Development</h2>
+        <p>
+          Safety and security are prerequisites for economic growth. Investors,
+          both local and international, are more likely to commit resources to a
+          country where the rule of law is upheld, and where people and property
+          are protected.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Fostering Economic Growth and Development')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
+        <h2>Protecting Human Rights and Dignity</h2>
+        <p>
+          Safety and security are closely tied to the protection of human
+          rights.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Protecting Human Rights and Dignity')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
+        <h2>Combating Crime and Terrorism</h2>
+        <p>
+          Safety and security also involve creating inclusive societies where
+          all citizens feel safe and valued.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Combating Crime and Terrorism')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
+        <h2>Promoting Social Cohesion and Reducing Violence</h2>
+        <p>
+          Safety and security also involve creating inclusive societies where
+          all citizens feel safe and valued.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Promoting Social Cohesion and Reducing Violence')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img
+          src="images/medical-practitioners.jpg"
+          alt="Healthcare Practitioners"
+        /> -->
+        <h2>Building Resilience to External Threats</h2>
+        <p>
+          In an increasingly interconnected world, African nations face a range
+          of external threats, including cyberattacks, transnational crime, and
+          regional conflicts.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Building Resilience to External Threats')"
+        >
+          Read More
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 Safety & Security Awards. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Function to open the modal and set content
+      function openModal(category) {
+        const modal = document.getElementById("myModal");
+        const title = document.getElementById("modal-title");
+        const description = document.getElementById("modal-description");
+
+        // Set the content based on category
+        if (category === "Ensuring Stable Governance and Social Order") {
+          title.innerText = "Ensuring Stable Governance and Social Order";
+          description.innerHTML = `
+          Leaders who have successfully maintained or restored law and order in their jurisdictions are safeguarding
+           democracy and enabling the smooth operation of governance. Recognizing these efforts sends a message 
+           that stability is foundational to the success of any nation, encouraging other leaders to prioritize 
+           security in their leadership agendas.
+                `;
+        } else if (category === "Fostering Economic Growth and Development") {
+          title.innerText = "Fostering Economic Growth and Development";
+          description.innerHTML = `
+          Leaders who have created secure environments conducive to business and investment are driving economic 
+          development. By honoring these leaders, ELPI reinforces the critical link between security and economic 
+          prosperity, inspiring others to create environments that attract and retain investment.
+                `;
+        } else if (category === "Protecting Human Rights and Dignity") {
+          title.innerText = "Protecting Human Rights and Dignity";
+          description.innerHTML = `
+          Leaders who ensure the safety of their citizens are also upholding their rights to life, liberty, and 
+          security. Recognizing these leaders emphasizes the importance of protecting human rights as a core
+           responsibility of leadership, particularly in regions where conflict and violence threaten these 
+           fundamental rights.
+                `;
+        } else if (category === "Combating Crime and Terrorism") {
+          title.innerText = "Combating Crime and Terrorism";
+          description.innerHTML = `
+          Leaders who have taken decisive action to combat these threats whether through policy, law enforcement, 
+          intelligence, or community engagement are protecting their citizens from harm and preserving national 
+          security. Honoring these efforts highlights the importance of proactive and effective leadership in 
+          the fight against crime and terrorism, encouraging others to adopt similar strategies.
+                `;
+        } else if (
+          category === "Promoting Social Cohesion and Reducing Violence"
+        ) {
+          title.innerText = "Promoting Social Cohesion and Reducing Violence";
+          description.innerHTML = `
+          Leaders who have worked to reduce violence, promote social cohesion, and address the root causes of
+           conflict—such as poverty, inequality, and marginalization—are fostering peace and unity within their
+            communities. Recognizing these leaders underscores the importance of addressing the underlying issues
+             that lead to insecurity, promoting long-term peace and stability.
+                `;
+        } else if (category === "Building Resilience to External Threats") {
+          title.innerText = "Building Resilience to External Threats";
+          description.innerHTML = `
+          Leaders who have strengthened their countries’ resilience to these threats through strategic partnerships,
+           robust security frameworks, and capacity-building initiatives are protecting their nations from external 
+           disruptions. By recognizing these efforts, ELPI highlights the importance of resilience in the face of 
+           global security challenges, encouraging leaders to prioritize national security in their governance.   
+                `;
+        }
+
+        // Show the modal
+        modal.style.display = "block";
+      }
+
+      // Function to close the modal
+      function closeModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "none";
+      }
+
+      // Close modal when clicking outside of the modal content
+      window.onclick = function (event) {
+        const modal = document.getElementById("myModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

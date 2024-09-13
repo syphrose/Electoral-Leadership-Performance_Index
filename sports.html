@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports Awards</title>
+    <link rel="stylesheet" href="sports.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>SPORTS AWARDS</h1>
+      <p>
+        The Sports pillar aligns with several United Nations Sustainable
+        Development Goals (SDGs), including SDG 3 (Good Health and Well-being),
+        SDG 8 (Decent Work and Economic Growth), and SDG 10 (Reduced
+        Inequalities). By promoting sports, leaders contribute to these global
+        objectives, helping to create a more equitable and sustainable future
+        for all. The Gala will highlight the contributions of sports leaders to
+        the SDGs, showcasing how sports can be a powerful vehicle for achieving
+        broader development goals.
+      </p>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+      <div class="card">
+        <!-- <img
+          src="images/healthcare-innovation.jpg"
+          alt="Healthcare Innovation"
+        /> -->
+        <h2>Nurturing Leadership and Excellence</h2>
+        <p>Sports are a natural incubator for leadership.</p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Nurturing Leadership and Excellence')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
+        <h2>Promoting Social Cohesion and Unity</h2>
+        <p>
+          Sports have the unique ability to unite people across diverse
+          backgrounds, cultures, and communities.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Promoting Social Cohesion and Unity')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
+        <h2>Driving Economic Growth and Development</h2>
+        <p>
+          The sports industry is a significant contributor to economic growth,
+          generating jobs, attracting investment, and driving tourism.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Driving Economic Growth and Development')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
+        <h2>Enhancing Health and Well-being</h2>
+        <p>
+          Sports play a crucial role in promoting health and well-being,
+          combating lifestyle-related diseases, and improving the quality of
+          life.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Enhancing Health and Well-being')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img
+          src="images/medical-practitioners.jpg"
+          alt="Healthcare Practitioners"
+        /> -->
+        <h2>Empowering Youth and Building Future Leaders</h2>
+        <p>
+          Africa's youth are the continent's greatest asset, and sports offer a
+          powerful platform for their empowerment.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Empowering Youth and Building Future Leaders')"
+        >
+          Read More
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 Sports Awards. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Function to open the modal and set content
+      function openModal(category) {
+        const modal = document.getElementById("myModal");
+        const title = document.getElementById("modal-title");
+        const description = document.getElementById("modal-description");
+
+        // Set the content based on category
+        if (category === "Healthcare Innovation") {
+          title.innerText = "Healthcare Innovation";
+          description.innerHTML = `
+          The Sports pillar at the Gala will celebrate those who have not only excelled in sports but have also used
+           their platform to inspire and lead others, exemplifying the values of excellence and accountability that 
+           ELPI champions. These individuals serve as role models, showing that the principles learned on the field 
+           can translate into impactful leadership off the field.
+                `;
+        } else if (category === "Promoting Social Cohesion and Unity") {
+          title.innerText = "Promoting Social Cohesion and Unity";
+          description.innerHTML = `
+          They foster a sense of belonging and national pride, breaking down barriers and building bridges between
+           different groups. In Africa, where diversity is vast, sports serve as a powerful tool for promoting social
+            cohesion and unity. The Gala will honor leaders who have harnessed the unifying power of sports to bring 
+            communities together, heal divisions, and foster a sense of shared identity and purpose.
+                `;
+        } else if (category === "Driving Economic Growth and Development") {
+          title.innerText = "Driving Economic Growth and Development";
+          description.innerHTML = `
+          Leaders who have strategically developed and promoted sports as an economic driver are making a substantial
+           impact on their countries' growth and prosperity. The Gala will recognize these leaders for their vision
+            and dedication to leveraging sports as a means of economic empowerment and development.
+                `;
+        } else if (category === "Enhancing Health and Well-being") {
+          title.innerText = "Enhancing Health and Well-being";
+          description.innerHTML = `
+          By encouraging physical activity and healthy competition, sports contribute to the overall health of
+           communities, reducing healthcare costs and enhancing productivity. The Gala will spotlight leaders 
+           who have prioritized sports as a key component of public health initiatives, demonstrating their commitment
+            to creating healthier, more active societies.
+                `;
+        } else if (
+          category === "Empowering Youth and Building Future Leaders"
+        ) {
+          title.innerText = "Empowering Youth and Building Future Leaders";
+          description.innerHTML = `
+          Through sports, young people learn important life skills, gain confidence, and are provided with 
+          opportunities to rise above their circumstances. Leaders who have invested in youth sports 
+          programs are not only fostering the next generation of athletes but are also building future 
+          leaders who will carry forward the values of excellence, teamwork, and accountability. The Gala
+           will celebrate these leaders for their dedication to youth development and their role in shaping
+            Africa's future.
+                `;
+        }
+
+        // Show the modal
+        modal.style.display = "block";
+      }
+
+      // Function to close the modal
+      function closeModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "none";
+      }
+
+      // Close modal when clicking outside of the modal content
+      window.onclick = function (event) {
+        const modal = document.getElementById("myModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
