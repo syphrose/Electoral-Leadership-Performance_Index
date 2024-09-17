@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism Awards</title>
+    <link rel="stylesheet" href="cullture.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>CULTURE AWARDS</h1>
+      <p>
+        The Arts and Culture pillar aligns with several United Nations
+        Sustainable Development Goals (SDGs), including SDG 4 (Quality
+        Education), SDG 8 (Decent Work and Economic Growth), and SDG 16 (Peace,
+        Justice, and Strong Institutions). By promoting and investing in the
+        arts, leaders contribute to these global objectives, helping to create
+        more inclusive, equitable, and sustainable societies. The Gala will
+        showcase how the arts can be leveraged to achieve broader development
+        goals, emphasizing the importance of cultural vitality in the pursuit of
+        sustainable development.
+      </p>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+      <div class="card">
+        <!-- <img
+          src="images/healthcare-innovation.jpg"
+          alt="Healthcare Innovation"
+        /> -->
+        <h2>Preserving and Celebrating African Heritage</h2>
+        <p>
+          Arts and culture are the soul of any society, encapsulating its
+          history, traditions, and values. In Africa, where cultural diversity
+          is vast and rich, the preservation of this heritage is vital for
+          maintaining a sense of identity and continuity.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Preserving and Celebrating African Heritage')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
+        <h2>Fostering National Identity and Unity</h2>
+        <p>
+          Arts and culture have the unique ability to unite people across
+          different backgrounds, fostering a shared sense of national identity.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Fostering National Identity and Unity')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
+        <h2>Driving Social Change and Empowerment</h2>
+        <p>
+          Through creative expression, artists and cultural leaders can
+          challenge the status quo, raise awareness of social issues, and
+          inspire movements for justice and equality.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Driving Social Change and Empowerment')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
+        <h2>Boosting Economic Development</h2>
+        <p>
+          The cultural and creative industries are significant drivers of
+          economic growth, providing employment, stimulating innovation, and
+          attracting tourism.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Boosting Economic Development')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img
+          src="images/medical-practitioners.jpg"
+          alt="Healthcare Practitioners"
+        /> -->
+        <h2>Enhancing Education and Lifelong Learning</h2>
+        <p>
+          Arts and culture play a crucial role in education, fostering
+          creativity, critical thinking, and emotional intelligence.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Enhancing Education and Lifelong Learning')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="card">
+        <!-- <img
+          src="images/medical-practitioners.jpg"
+          alt="Healthcare Practitioners"
+        /> -->
+        <h2>Promoting International Diplomacy & Cultural Exchange</h2>
+        <p>
+          Arts and culture are powerful tools for diplomacy, allowing nations to
+          engage with the world on the basis of mutual respect and
+          understanding.
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="openModal('Promoting International Diplomacy & Cultural Exchange')"
+        >
+          Read More
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 Culture Awards. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Function to open the modal and set content
+      function openModal(category) {
+        const modal = document.getElementById("myModal");
+        const title = document.getElementById("modal-title");
+        const description = document.getElementById("modal-description");
+
+        // Set the content based on category
+        if (category === "Unlocking economic potential") {
+          title.innerText = "Unlocking economic potential";
+          description.innerHTML = `
+          The Arts and Culture pillar at the Gala will celebrate leaders who have made significant contributions to preserving and promoting Africa's
+           cultural heritage. By supporting and investing in the arts, these leaders ensure that future generations remain connected to their roots 
+           while also showcasing Africa's unique cultural wealth to the world.
+                `;
+        } else if (category === "Fostering National Identity and Unity") {
+          title.innerText = "Fostering National Identity and Unity";
+          description.innerHTML = `
+          Through music, dance, visual arts, literature, and other cultural expressions, communities can find common ground and celebrate their 
+          collective heritage. The Gala will honor those leaders who have used arts and culture as a tool for promoting national unity, bridging 
+          divides, and fostering a sense of belonging among diverse populations.
+                `;
+        } else if (category === "Driving Social Change and Empowerment") {
+          title.innerText = "Driving Social Change and Empowerment";
+          description.innerHTML = `
+          The Arts and Culture pillar will recognize those who have harnessed the power of the arts to drive social change, empower marginalized 
+          communities, and advocate for human rights. These leaders use their platforms to give voice to the voiceless and catalyze positive 
+          transformation in society.
+               `;
+        } else if (category === "Boosting Economic Development") {
+          title.innerText = "Boosting Economic Development";
+          description.innerHTML = `
+          From fashion and film to music and visual arts, the creative sector contributes to GDP and enhances the global visibility of 
+          African countries. The Gala will celebrate leaders who have strategically invested in the arts and culture sector, recognizing
+           its potential to generate economic opportunities and uplift communities.
+                `;
+        } else if (category === "Enhancing Education and Lifelong Learning") {
+          title.innerText = "Enhancing Education and Lifelong Learning";
+          description.innerHTML = `
+          Integrating the arts into education systems not only enriches the learning experience but also nurtures well-rounded
+           individuals who are capable of innovative thinking and problem-solving. The Gala will honor leaders who have 
+           championed arts education, recognizing its importance in developing the next generation of thinkers, creators, and leaders.
+                `;
+        } else if (
+          category === "Promoting International Cooperation and Partnerships"
+        ) {
+          title.innerText =
+            "Promoting International Diplomacy & Cultural Exchange";
+          description.innerHTML = `
+          Through cultural exchange, countries can build bridges, strengthen relationships, and enhance their global 
+          standing. The Arts and Culture pillar will highlight leaders who have promoted cultural diplomacy, using the 
+          arts to foster international collaboration and peace. These efforts contribute to a more interconnected and 
+          harmonious world, where cultural diversity is celebrated and valued.
+                `;
+        }
+
+        // Show the modal
+        modal.style.display = "block";
+      }
+
+      // Function to close the modal
+      function closeModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "none";
+      }
+
+      // Close modal when clicking outside of the modal content
+      window.onclick = function (event) {
+        const modal = document.getElementById("myModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

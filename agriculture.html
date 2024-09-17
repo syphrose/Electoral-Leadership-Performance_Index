@@ -4,22 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agriculture Awards</title>
-    <link rel="stylesheet" href="blue economy.css" />
+    <link rel="stylesheet" href="agriculture.css" />
   </head>
   <body>
     <!-- Header Section -->
     <header>
       <h1>AGRICULTURE AWARDS</h1>
       <p>
-        The Blue Economy pillar is directly aligned with several United Nations
-        Sustainable Development Goals (SDGs), particularly SDG 14 (Life Below
-        Water), SDG 8 (Decent Work and Economic Growth), and SDG 13 (Climate
-        Action). By promoting sustainable use of marine resources, the Blue
-        Economy contributes to global efforts to protect the ocean, promote
-        economic prosperity, and combat climate change. The Gala will showcase
-        how African leaders are advancing these global objectives through their
-        commitment to the Blue Economy, positioning Africa as a leader in
-        sustainable development.
+        Food security and agriculture form the backbone of sustainable
+        development in Africa, and ELPI’s focus on this pillar at the Inaugural
+        Gala is crucial in highlighting the importance of resilient agricultural
+        systems and equitable access to food. This aligns with Sustainable
+        Development Goal 2 (SDG 2), which aims to "end hunger, achieve food
+        security and improved nutrition, and promote sustainable agriculture."
       </p>
     </header>
 
@@ -30,14 +27,14 @@
           src="images/healthcare-innovation.jpg"
           alt="Healthcare Innovation"
         /> -->
-        <h2>Unlocking economic potential</h2>
+        <h2>Addressing Hunger and Malnutrition</h2>
         <p>
-          Africa's vast coastlines, inland waterways, and marine resources
-          present unparalleled opportunities for economic growth.
+          Africa struggles with widespread hunger and malnutrition, with
+          millions suffering from food insecurity.
         </p>
         <button
           class="read-more-btn"
-          onclick="openModal('Unlocking economic potential')"
+          onclick="openModal('Addressing Hunger and Malnutrition')"
         >
           Read More
         </button>
@@ -45,15 +42,14 @@
 
       <div class="card">
         <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
-        <h2>Promoting Environmental Sustainability</h2>
+        <h2>Enhancing Agricultural Productivity</h2>
         <p>
-          Africa's marine ecosystems are under threat from overfishing,
-          pollution, and climate change, making it essential to adopt practices
-          that protect and preserve these environments.
+          Agriculture is not only a source of food but also a key driver of
+          economic growth in Africa.
         </p>
         <button
           class="read-more-btn"
-          onclick="openModal('Promoting Environmental Sustainability')"
+          onclick="openModal('Enhancing Agricultural Productivity')"
         >
           Read More
         </button>
@@ -61,15 +57,14 @@
 
       <div class="card">
         <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
-        <h2>Enhancing Food Security and Nutrition</h2>
+        <h2>Promoting Sustainable Agriculture</h2>
         <p>
-          The Blue Economy provides a pathway to enhancing food security by
-          increasing the availability of fish and other marine products, which
-          are rich in essential nutrients.
+          Agriculture's environmental impact is significant, and sustainability
+          is key to long-term food security.
         </p>
         <button
           class="read-more-btn"
-          onclick="openModal('Enhancing Food Security and Nutrition')"
+          onclick="openModal('Promoting Sustainable Agriculture')"
         >
           Read More
         </button>
@@ -77,15 +72,15 @@
 
       <div class="card">
         <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
-        <h2>Fostering Innovation and Technological Advancement</h2>
+        <h2>Improving Access to Agricultural Inputs and Markets</h2>
         <p>
-          From renewable energy technologies like offshore wind and wave power
-          to advancements in marine biotechnology, the Blue Economy encourages
-          cutting-edge research and development.
+          Smallholder farmers, who form the majority of Africa’s agricultural
+          workforce, often face challenges in accessing markets and necessary
+          inputs like seeds, fertilizers, and technology.
         </p>
         <button
           class="read-more-btn"
-          onclick="openModal('Fostering Innovation and Technological Advancement')"
+          onclick="openModal('Improving Access to Agricultural Inputs and Markets')"
         >
           Read More
         </button>
@@ -96,15 +91,14 @@
           src="images/medical-practitioners.jpg"
           alt="Healthcare Practitioners"
         /> -->
-        <h2>Advancing Climate Resilience and Adaptation</h2>
+        <h2>Building Resilience to Climate and Economic Shocks</h2>
         <p>
-          The Blue Economy offers solutions for enhancing climate resilience,
-          such as the development of natural coastal defenses, sustainable
-          coastal tourism, and the protection of mangroves and coral reefs.
+          The frequency of climate-related disasters such as droughts and floods
+          disproportionately affects Africa’s agricultural sector.
         </p>
         <button
           class="read-more-btn"
-          onclick="openModal('Advancing Climate Resilience and Adaptation')"
+          onclick="openModal('Building Resilience to Climate and Economic Shocks')"
         >
           Read More
         </button>
@@ -115,15 +109,14 @@
           src="images/medical-practitioners.jpg"
           alt="Healthcare Practitioners"
         /> -->
-        <h2>Empowering Coastal and Island Communities</h2>
+        <h2>Empowering Women and Youth in Agriculture</h2>
         <p>
-          The Blue Economy has the potential to empower coastal and island
-          communities by providing them with new economic opportunities and
-          improving their quality of life.
+          In Africa, women and youth form the backbone of the agricultural
+          workforce.
         </p>
         <button
           class="read-more-btn"
-          onclick="openModal('Empowering Coastal and Island Communities')"
+          onclick="openModal('Empowering Women and Youth in Agriculture')"
         >
           Read More
         </button>
@@ -141,7 +134,7 @@
 
     <!-- Footer Section -->
     <footer>
-      <p>&copy; 2024 Blue Economy Awards. All rights reserved.</p>
+      <p>&copy; 2024 Agriculture Awards. All rights reserved.</p>
     </footer>
 
     <script>
@@ -152,53 +145,52 @@
         const description = document.getElementById("modal-description");
 
         // Set the content based on category
-        if (category === "Unlocking economic potential") {
-          title.innerText = "Unlocking economic potential";
+        if (category === "Addressing Hunger and Malnutrition") {
+          title.innerText = "Addressing Hunger and Malnutrition";
           description.innerHTML = `
-          The Blue Economy, which encompasses industries such as fisheries, aquaculture, maritime transport, tourism, and 
-          renewable ocean energy, is a critical driver of economic development. The Gala will honor leaders who have 
-          successfully harnessed these resources to create jobs, stimulate economic activity, and reduce poverty in coastal
-           and island communities. 
+          ELPI's Gala highlights this issue, aligning with SDG 2.1, which aims to ensure year-round access to nutritious 
+          food for all. By recognizing leaders advancing food access, especially in marginalized areas, the event 
+          emphasizes the role of leadership in adopting effective policies.  
                 `;
-        } else if (category === "Promoting Environmental Sustainability") {
-          title.innerText = "Promoting Environmental Sustainability";
+        } else if (category === "Enhancing Agricultural Productivity") {
+          title.innerText = "Enhancing Agricultural Productivity";
           description.innerHTML = `
-          The Blue Economy pillar will celebrate leaders who have implemented sustainable practices, such as responsible 
-          fishing, marine conservation, and the reduction of marine pollution. These efforts are crucial in maintaining 
-          the health of Africa's oceans, which are vital to global biodiversity and climate regulation.
+          ELPI recognizes the need to boost agricultural productivity to support economic development and ensure food security.
+           This aligns with SDG 2.3, which seeks to double the agricultural productivity and incomes of small-scale farmers, 
+           especially women, indigenous peoples, and family farmers.
                 `;
-        } else if (category === "Enhancing Food Security and Nutrition") {
-          title.innerText = "Enhancing Food Security and Nutrition";
+        } else if (category === "Promoting Sustainable Agriculture") {
+          title.innerText = "Promoting Sustainable Agriculture";
           description.innerHTML = `
-          The Gala will recognize leaders who have championed sustainable fisheries management, ensuring that marine
-           resources are harvested in a way that does not compromise future generations' ability to meet their food
-            needs. By supporting the Blue Economy, these leaders are directly contributing to the fight against hunger 
-            and malnutrition in Africa.
+          ELPI will honor leaders championing sustainable practices that reduce ecological damage while increasing productivity, 
+          aligning with SDG 2.4, which promotes resilient agricultural systems. These practices include boosting productivity,
+           protecting ecosystems, and adapting to climate change. 
                 `;
         } else if (
-          category === "Fostering Innovation and Technological Advancement"
+          category === "Improving Access to Agricultural Inputs and Markets"
         ) {
           title.innerText =
-            "Fostering Innovation and Technological Advancement";
+            "Improving Access to Agricultural Inputs and Markets";
           description.innerHTML = `
-          The Gala will honor leaders who have promoted innovation in the Blue Economy, supporting the development of 
-          technologies that drive economic growth while protecting marine ecosystems. These innovations are essential
-           for Africa to remain competitive in the global economy.
+          ELPI’s focus on food security will highlight how leaders can support policies and frameworks that make these inputs 
+          more accessible, ensuring that small-scale farmers can compete in national and international markets. 
                 `;
-        } else if (category === "Advancing Climate Resilience and Adaptation") {
-          title.innerText = "Advancing Climate Resilience and Adaptation";
+        } else if (
+          category === "Building Resilience to Climate and Economic Shocks"
+        ) {
+          title.innerText =
+            "Building Resilience to Climate and Economic Shocks";
           description.innerHTML = `
-          The Gala will honor leaders who have integrated climate resilience into their Blue Economy strategies, ensuring
-           that coastal and island communities can adapt to changing environmental conditions. These efforts are essential
-            for safeguarding livelihoods and ecosystems in the face of climate change.
+          ELPI will highlight the leaders who are taking proactive steps to build resilience in food systems, ensuring that 
+          communities are prepared for climate shocks and economic volatility. This aligns with SDG 2.B, which focuses on 
+          correcting and preventing trade restrictions and distortions in world agricultural markets.
                 `;
-        } else if (category === "Empowering Coastal and Island Communities") {
-          title.innerText = "Empowering Coastal and Island Communities";
+        } else if (category === "Empowering Women and Youth in Agriculture") {
+          title.innerText = "Empowering Women and Youth in Agriculture";
           description.innerHTML = `
-          The Gala will celebrate leaders who have prioritized the inclusion and empowerment of these communities, 
-          ensuring that they benefit from Blue Economy initiatives. By supporting local entrepreneurship, 
-          capacity-building, and access to resources, these leaders help to create sustainable and inclusive
-           economic growth that leaves no one behind.
+          ELPI will spotlight leadership that empowers these groups by providing them with access to resources, education, 
+          and opportunities. This aligns with SDG 2.3, focusing on increasing the productivity and income of small-scale
+           food producers, especially women.
                 `;
         }
 

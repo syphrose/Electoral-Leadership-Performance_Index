@@ -4,22 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Equality Awards</title>
-    <link rel="stylesheet" href="blue economy.css" />
+    <link rel="stylesheet" href="equality.css" />
   </head>
   <body>
     <!-- Header Section -->
     <header>
       <h1>EQUALITY AWARDS</h1>
       <p>
-        The Blue Economy pillar is directly aligned with several United Nations
-        Sustainable Development Goals (SDGs), particularly SDG 14 (Life Below
-        Water), SDG 8 (Decent Work and Economic Growth), and SDG 13 (Climate
-        Action). By promoting sustainable use of marine resources, the Blue
-        Economy contributes to global efforts to protect the ocean, promote
-        economic prosperity, and combat climate change. The Gala will showcase
-        how African leaders are advancing these global objectives through their
-        commitment to the Blue Economy, positioning Africa as a leader in
-        sustainable development.
+        Incorporating the Reduced Inequality pillar into the upcoming Inaugural
+        ELPI Gala Event is not just about celebrating leaders; it is about
+        building a future where African societies can thrive through equitable
+        opportunities, inclusive policies, and sustainable growth. By aligning
+        with SDG 10, ELPI reaffirms its commitment to creating a just, fair, and
+        prosperous Africa, setting a benchmark for leadership excellence and
+        accountability across the continent.
       </p>
     </header>
 
@@ -30,14 +28,14 @@
           src="images/healthcare-innovation.jpg"
           alt="Healthcare Innovation"
         /> -->
-        <h2>Unlocking economic potential</h2>
+        <h2>Addressing Structural Inequities</h2>
         <p>
-          Africa's vast coastlines, inland waterways, and marine resources
-          present unparalleled opportunities for economic growth.
+          In many African countries, structural inequalities - based on income,
+          gender, ethnicity, and access to resources - persist.
         </p>
         <button
           class="read-more-btn"
-          onclick="openModal('Unlocking economic potential')"
+          onclick="openModal('Addressing Structural Inequities')"
         >
           Read More
         </button>
@@ -45,15 +43,15 @@
 
       <div class="card">
         <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
-        <h2>Promoting Environmental Sustainability</h2>
+        <h2>Fostering Sustainable Economic Growth</h2>
         <p>
-          Africa's marine ecosystems are under threat from overfishing,
-          pollution, and climate change, making it essential to adopt practices
-          that protect and preserve these environments.
+          Reduced inequality is directly tied to sustainable economic growth, a
+          principle embodied in SDG 10.1, which seeks to achieve and sustain
+          income growth for the bottom 40% of the population.
         </p>
         <button
           class="read-more-btn"
-          onclick="openModal('Promoting Environmental Sustainability')"
+          onclick="openModal('Fostering Sustainable Economic Growth')"
         >
           Read More
         </button>
@@ -61,15 +59,15 @@
 
       <div class="card">
         <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
-        <h2>Enhancing Food Security and Nutrition</h2>
+        <h2>Promoting Access to Resources and Opportunities</h2>
         <p>
-          The Blue Economy provides a pathway to enhancing food security by
-          increasing the availability of fish and other marine products, which
-          are rich in essential nutrients.
+          nequality also manifests in the uneven distribution of resources and
+          opportunities, particularly in healthcare, education, and political
+          representation.
         </p>
         <button
           class="read-more-btn"
-          onclick="openModal('Enhancing Food Security and Nutrition')"
+          onclick="openModal('Promoting Access to Resources and Opportunities')"
         >
           Read More
         </button>
@@ -77,15 +75,15 @@
 
       <div class="card">
         <!-- <img src="images/hospitals.jpg" alt="Hospitals & Facilities" /> -->
-        <h2>Fostering Innovation and Technological Advancement</h2>
+        <h2>Reducing Inequality for Global Integration</h2>
         <p>
-          From renewable energy technologies like offshore wind and wave power
-          to advancements in marine biotechnology, the Blue Economy encourages
-          cutting-edge research and development.
+          SDG 10 advocates for reducing inequalities between countries by
+          facilitating global collaboration on financial policies, fair trade
+          practices, and better integration into global markets.
         </p>
         <button
           class="read-more-btn"
-          onclick="openModal('Fostering Innovation and Technological Advancement')"
+          onclick="openModal('Reducing Inequality for Global Integration')"
         >
           Read More
         </button>
@@ -96,34 +94,11 @@
           src="images/medical-practitioners.jpg"
           alt="Healthcare Practitioners"
         /> -->
-        <h2>Advancing Climate Resilience and Adaptation</h2>
-        <p>
-          The Blue Economy offers solutions for enhancing climate resilience,
-          such as the development of natural coastal defenses, sustainable
-          coastal tourism, and the protection of mangroves and coral reefs.
-        </p>
+        <h2>Fostering Trust in Leadership through Accountability</h2>
+        <p>Promoting reduced inequality fosters trust in leadership.</p>
         <button
           class="read-more-btn"
-          onclick="openModal('Advancing Climate Resilience and Adaptation')"
-        >
-          Read More
-        </button>
-      </div>
-
-      <div class="card">
-        <!-- <img
-          src="images/medical-practitioners.jpg"
-          alt="Healthcare Practitioners"
-        /> -->
-        <h2>Empowering Coastal and Island Communities</h2>
-        <p>
-          The Blue Economy has the potential to empower coastal and island
-          communities by providing them with new economic opportunities and
-          improving their quality of life.
-        </p>
-        <button
-          class="read-more-btn"
-          onclick="openModal('Empowering Coastal and Island Communities')"
+          onclick="openModal('Fostering Trust in Leadership through Accountability')"
         >
           Read More
         </button>
@@ -152,53 +127,43 @@
         const description = document.getElementById("modal-description");
 
         // Set the content based on category
-        if (category === "Unlocking economic potential") {
-          title.innerText = "Unlocking economic potential";
+        if (category === "Addressing Structural Inequities") {
+          title.innerText = "Addressing Structural Inequities";
           description.innerHTML = `
-          The Blue Economy, which encompasses industries such as fisheries, aquaculture, maritime transport, tourism, and 
-          renewable ocean energy, is a critical driver of economic development. The Gala will honor leaders who have 
-          successfully harnessed these resources to create jobs, stimulate economic activity, and reduce poverty in coastal
-           and island communities. 
+          These inequities often stem from historical factors, poor governance, and systemic failures in social 
+          and economic policy. ELPI aims to drive leadership accountability in reducing such disparities by 
+          assessing how leaders promote fair economic policies, social inclusion, and the protection of vulnerable populations.
                 `;
-        } else if (category === "Promoting Environmental Sustainability") {
-          title.innerText = "Promoting Environmental Sustainability";
+        } else if (category === "Fostering Sustainable Economic Growth") {
+          title.innerText = "Fostering Sustainable Economic Growth";
           description.innerHTML = `
-          The Blue Economy pillar will celebrate leaders who have implemented sustainable practices, such as responsible 
-          fishing, marine conservation, and the reduction of marine pollution. These efforts are crucial in maintaining 
-          the health of Africa's oceans, which are vital to global biodiversity and climate regulation.
-                `;
-        } else if (category === "Enhancing Food Security and Nutrition") {
-          title.innerText = "Enhancing Food Security and Nutrition";
-          description.innerHTML = `
-          The Gala will recognize leaders who have championed sustainable fisheries management, ensuring that marine
-           resources are harvested in a way that does not compromise future generations' ability to meet their food
-            needs. By supporting the Blue Economy, these leaders are directly contributing to the fight against hunger 
-            and malnutrition in Africa.
+          Leaders who champion inclusive economic policies, foster job creation, and address wealth gaps can drive long-term
+           national prosperity. 
                 `;
         } else if (
-          category === "Fostering Innovation and Technological Advancement"
+          category === "Promoting Access to Resources and Opportunities"
+        ) {
+          title.innerText = "Promoting Access to Resources and Opportunities";
+          description.innerHTML = `
+          By assessing leadership based on these metrics, ELPI amplifies the importance of creating access for all. This aligns
+           with SDG 10.3, which emphasizes eliminating discriminatory laws and practices, ensuring equal opportunities, and 
+           providing fair access to basic services
+                `;
+        } else if (category === "Reducing Inequality for Global Integration") {
+          title.innerText = "Reducing Inequality for Global Integration";
+          description.innerHTML = `
+          Leaders who engage in international partnerships and inclusive trade agreements enhance the continent’s competitive 
+          edge while ensuring benefits are equitably shared within their countries.
+                `;
+        } else if (
+          category === " Fostering Trust in Leadership through Accountability"
         ) {
           title.innerText =
-            "Fostering Innovation and Technological Advancement";
+            "Fostering Trust in Leadership through Accountability";
           description.innerHTML = `
-          The Gala will honor leaders who have promoted innovation in the Blue Economy, supporting the development of 
-          technologies that drive economic growth while protecting marine ecosystems. These innovations are essential
-           for Africa to remain competitive in the global economy.
-                `;
-        } else if (category === "Advancing Climate Resilience and Adaptation") {
-          title.innerText = "Advancing Climate Resilience and Adaptation";
-          description.innerHTML = `
-          The Gala will honor leaders who have integrated climate resilience into their Blue Economy strategies, ensuring
-           that coastal and island communities can adapt to changing environmental conditions. These efforts are essential
-            for safeguarding livelihoods and ecosystems in the face of climate change.
-                `;
-        } else if (category === "Empowering Coastal and Island Communities") {
-          title.innerText = "Empowering Coastal and Island Communities";
-          description.innerHTML = `
-          The Gala will celebrate leaders who have prioritized the inclusion and empowerment of these communities, 
-          ensuring that they benefit from Blue Economy initiatives. By supporting local entrepreneurship, 
-          capacity-building, and access to resources, these leaders help to create sustainable and inclusive
-           economic growth that leaves no one behind.
+          When citizens witness a commitment to equity and fairness, they are more likely to engage with governance systems and 
+          participate in nation-building efforts. ELPI's Gala event will celebrate leaders who are driving transparency, equality,
+           and the empowerment of marginalized communities, holding them up as examples for others to follow.
                 `;
         }
 
