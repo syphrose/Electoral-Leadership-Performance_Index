@@ -11,6 +11,7 @@
       src="https://kit.fontawesome.com/452d5e3228.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <div id="header">
@@ -21,11 +22,12 @@
             <img src="images/logo-nav.png" class="logo"/>
           </div>
           <ul id="sidemenu">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
             <li class="dropdown">
-              <a href="javascript:void(0)" class="dropbtn">Thematic Awards</a>
+              <a href="javascript:void(0)" class="dropbtn">THEMES</a>
               <div class="dropdown-content">
-                <a href="#services">Awards</a>
+                <a href="#services">AWARDS</a>
                 <a href="healthcare.html">Health Care</a>
                 <a href="education.html">Education</a>
                 <a href="roads & infrastructure.html">Roads & Infrastructure</a>
@@ -40,8 +42,9 @@
                 <a href="culture.html">Culture</a>
               </div>
             </li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#our goals"> OUR GOALS</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
             <i class="fas fa-times" onclick="closemenu()"></i>
           </ul>
           <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -57,15 +60,33 @@
         </div>
       </header>
 
+      <!---------About Section--------------->
+      <section id="about">
+        <div class="container">
+          <h2 class="sub-title">About Us</h2>
+          <p>
+            The Electoral & Leadership Performance Index (ELPI) is a leading organization
+             dedicated to inspiring elected and appointed leaders across Africa to pursue
+              excellence in leadership, governance and accountability. With a focus on 
+              assessing and measuring leadership performance; ELPI conducts credible 
+              research anchored and aligned with the United Nations Sustainable 
+              Development Goals (SDGs). ELPI envisions an Africa where leaders are 
+              motivated, recognized, and driven to excel in their roles. Through the 
+              development of reliable performance metrics, hosting thematic events, and
+               providing ongoing Monitoring & Evaluation services, ELPI aims to foster 
+               leadership transformation across the continent, contributing to the achievement
+                of the SDGs and promoting a culture of accountability and excellence.
+          </p>
+        </div>
+      </section>
 
         <!--------Awards Section---------->
 
         <section id="services">
           <div class="container">
-            <h2 class="sub-title">Thematic Awards</h2>
+            <h2 class="sub-title">THEMES</h2>
             <p>
-              Rewarding good performance presented in thematic information
-              areas.
+              Rewarding good performance in the following Thematic Areas
             </p>
             <div class="services-list grid-container">
               <div class="grid-item">
@@ -184,37 +205,12 @@
           </div>
         </section>
 
-        <!---------About Section--------------->
-        <section id="about">
-          <div class="container">
-            <h2 class="sub-title">About Us</h2>
-            <p>
-              Electoral & Leadership Performance Index (ELPI) is a premier
-              organization dedicated to inspiring leaders across electoral,
-              government, non-governmental organizations, and corporate sectors
-              in Africa to embrace and practice excellence and accountability.
-              ELPI is uniquely positioned to assess and measure the performance
-              of African leaders through credible research anchored around the
-              United Nations Sustainable Development Goals (SDGs). ELPI
-              envisions a future where leaders in Africa are inspired,
-              recognized, and motivated to excel in their respective fields. By
-              establishing credible performance measurement parameters,
-              organizing thematic events, and offering ongoing Monitoring &
-              Evaluation services, ELPI seeks to catalyze a positive
-              transformation in leadership across the continent, ultimately
-              contributing to the realization of the United Nations Sustainable
-              Development Goals and fostering a culture of excellence and
-              accountability.
-            </p>
-          </div>
-        </section>
-
         <!---------Goals Section------->
         <section id="team">
           <div class="container">
             <h1 class="sub-title">Our Goals</h1>
             <p>
-              Empowering Leaders, Transforming Communities.
+              Leadership excellence, transforming communities.
             </p>
             <div class="team-list grid-container">
               <div class="grid-item">
@@ -268,7 +264,7 @@
             </p>
             <div class="team-list grid-container">
               <div class="grid-item">
-                <!-- <img src="images/Event-1.png" alt="Upcoming" /> -->
+                <img src="images/AdobeStock_278307813_Preview-transformed.jpeg" alt="Upcoming" />
             </div>
           </div>
         <!-------Contact  Section----->
@@ -281,25 +277,25 @@
                 <i class="fas fa-paper-plane"></i>
                 <a href="mailto:info@elpiafrica.org">info@elpiafrica.org</a>
               </p>
-              <p><i class="fas fa-phone-square-alt"></i> 0732333435</p>
+              <p><i class="fas fa-phone-square-alt"></i> +254 7 32 33 34 35</p>
               <div class="social-icons">
                 <a href="https://web.facebook.com/groups/368059286083091/"
                   ><i class="fa-brands fa-square-facebook"></i
                 ></a>
-                <a href="https://twitter.com/_syphrose"
+                <a href="https://x.com/ElpiAfrica"
                   ><i class="fa-brands fa-square-x-twitter"></i
                 ></a>
-                <a href="https://www.instagram.com/swabulwenyi/"
+                <!-- <a href="https://www.instagram.com/swabulwenyi/"
                   ><i class="fa-brands fa-square-instagram"></i
-                ></a>
+                ></a> -->
                 <a
-                  href="https://www.linkedin.com/company/101667222/admin/dashboard/"
+                  href="https://www.linkedin.com/in/elpi-africa/"
                   ><i class="fa-brands fa-linkedin"></i
                 ></a>
               </div>
               <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                  <input
+                <form name="submit-to-google-sheet" action="YOUR_FORM_ACTION_URL" method="POST">
+                  <input  
                     type="text"
                     name="Name"
                     placeholder="Your Name"
@@ -316,6 +312,7 @@
                     rows="6"
                     placeholder="Your Message"
                   ></textarea>
+                  <div class="g-recaptcha" data-sitekey="6LfRhUkqAAAAAH-jogSC6DvZbgyvzp2XQwRqOSYA"></div>
                   <button type="submit" class="btn btn2">Submit</button>
                 </form>
                 <span id="msg"></span>
@@ -327,7 +324,7 @@
         <!-- Footer Section -->
         <footer>
           <div class="container">
-            <p>&copy;2024 ELPi Africa. All rights reserved.</p>
+            <p>&copy;2024 ELPI Africa. All rights reserved.</p>
           </div>
         </footer>
       </div>
