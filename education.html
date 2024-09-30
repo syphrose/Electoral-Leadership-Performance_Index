@@ -21,6 +21,7 @@
         investing in the future of their nations by empowering the next
         generation to overcome challenges, innovate, and drive progress.
       </p>
+      <button onclick="goBackOrHome()">Home</button>
     </header>
 
     <!-- Main Content Section -->
@@ -181,6 +182,18 @@
           modal.style.display = "none";
         }
       };
+    </script>
+    <!-- Back btn -->
+    <script>
+      function goBackOrHome() {
+        if (document.referrer !== "") {
+          // Go back to the previous page
+          window.history.back();
+        } else {
+          // Redirect to the main site or homepage
+          window.location.href = "https://www.elpiafrica.org";
+        }
+      }
     </script>
   </body>
 </html>

@@ -27,6 +27,23 @@ header p {
   font-size: 16px;
 }
 
+/*Back btn*/
+
+button {
+  padding: 10px 20px;
+  background-color: #adef7b;
+  color: black;
+  font-weight: bolder;
+  font-size: large;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
+
 .logo {
   background-size: contain;
   width: 240px;

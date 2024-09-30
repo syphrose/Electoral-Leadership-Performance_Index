@@ -23,6 +23,7 @@
         leadership in WASH underscores the importance of these essential
         services in building healthy, resilient, and prosperous societies.
       </p>
+      <button onclick="goBackOrHome()">Home</button>
     </header>
 
     <!-- Main Content Section -->
@@ -190,6 +191,18 @@
           modal.style.display = "none";
         }
       };
+    </script>
+    <!-- Back btn -->
+    <script>
+      function goBackOrHome() {
+        if (document.referrer !== "") {
+          // Go back to the previous page
+          window.history.back();
+        } else {
+          // Redirect to the main site or homepage
+          window.location.href = "https://www.elpiafrica.org";
+        }
+      }
     </script>
   </body>
 </html>

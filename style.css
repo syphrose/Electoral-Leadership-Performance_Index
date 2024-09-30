@@ -4,6 +4,28 @@
   font-family: Lato;
   box-sizing: border-box;
 }
+/* Style for the "Back to Top" button */
+#backToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Place at the bottom of the page */
+  right: 30px; /* Place on the right */
+  z-index: 99; /* Make sure it appears on top of other elements */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #555; /* Dark background color */
+  color: white; /* White text color */
+  cursor: pointer; /* Pointer/hand icon */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+/* Style for button when hovered */
+#backToTopBtn:hover {
+  background-color: #333; /* Darker background on hover */
+}
+/* Style for the "Back to Top" button */
 html {
   scroll-behavior: smooth;
 }
@@ -16,7 +38,7 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(images/Newbackground-img.png);
+  background-image: url(images/Ne.png);
   background-color: #185228;
   background-size: cover;
   background-position: center;
@@ -99,7 +121,7 @@ nav ul li a:hover::after {
 }
 .header-text {
   color: white;
-  margin-top: 20%;
+  margin-top: 23%;
   font-size: 22px;
 }
 .header-text p h1 {
@@ -378,7 +400,7 @@ nav .fas {
 
 @media only screen and (max-width: 600px) {
   #header {
-    background-image: url(images/Newbackground-img.png);
+    background-image: url(images/Ne.png);
   }
 
   .header-text {
