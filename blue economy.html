@@ -3,15 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon-32x32.png" type="image/png" />
     <title>Blue Economy Awards</title>
     <link rel="stylesheet" href="blue economy.css" />
   </head>
   <body>
     <!-- Header Section -->
     <header>
-      <div class="logo">
-        <img src="images/logo-nav.png" class="logo" />
-      </div>
+      <nav>
+        <div class="logo">
+          <img src="images/logo-nav.png" class="logo" />
+        </div>
+        <ul id="sidemenu">
+          <li><a href="index.html#home">HOME</a></li>
+          <li><a href="index.html#about">ABOUT</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">THEMES</a>
+            <div class="dropdown-content">
+              <a href="index.html#services">AWARDS</a>
+              <a href="healthcare.html">Health Care</a>
+              <a href="education.html">Education</a>
+              <a href="roads & infrastructure.html">Roads & Infrastructure</a>
+              <a href="wash.html">WASH</a>
+              <a href="climate.html">Climate Change</a>
+              <a href="security.html">Security</a>
+              <a href="sports.html">Sports</a>
+              <a href="blue economy.html">Blue Economy</a>
+              <a href="equality.html">Equality</a>
+              <a href="economic growth.html">Economic Growth</a>
+              <a href="agriculture.html">Agriculture</a>
+              <a href="culture.html">Culture</a>
+            </div>
+          </li>
+          <li><a href="index.html#our goals">GOALS</a></li>
+          <li><a href="index.html#gallery">GALLERY</a></li>
+          <li><a href="index.html#contact">CONTACT</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
       <h1>BLUE ECONOMY AWARDS</h1>
       <p>
         The Blue Economy pillar is directly aligned with several United Nations
@@ -223,6 +253,26 @@
           modal.style.display = "none";
         }
       };
+    </script>
+
+    <!-- The dropdown on nav-bar -->
+    <script>
+      document.querySelectorAll("nav a").forEach((link) => {
+        link.addEventListener("click", function (e) {
+          const href = this.getAttribute("href");
+          if (href.startsWith("#")) {
+            // Prevent default behavior
+            e.preventDefault();
+            // Find the element to scroll to
+            const targetSection = document.querySelector(href);
+            // Smoothly scroll to the section
+            targetSection.scrollIntoView({ behavior: "smooth" });
+          } else {
+            // If it's not an anchor link (e.g., an external page), follow the link normally
+            window.location.href = href;
+          }
+        });
+      });
     </script>
     <!-- Back btn -->
     <script>

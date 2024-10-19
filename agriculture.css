@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #adef7b;
@@ -10,6 +10,10 @@ body {
 /* Header Styles */
 header {
   background-color: #104a20;
+  position: flex;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -21,10 +25,91 @@ header h1 {
 }
 
 header p {
+  margin-top: 10px;
   margin-left: 5px;
   margin-right: 5px;
-  margin-top: 10px;
   font-size: 16px;
+}
+
+/* Navbar Styles */
+
+.logo {
+  background-size: contain;
+  width: 240px;
+  margin-left: 0px;
+}
+
+nav {
+  background-color: #adef7b;
+  padding: -120px;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0px;
+  display: flex;
+  justify-content: left;
+}
+
+nav ul li {
+  padding-top: 5px;
+  padding-left: 5px;
+  margin: 0 15px;
+  margin-left: 20px;
+  margin-right: -60px;
+}
+
+nav ul li a {
+  color: #104a20;
+  text-decoration: none;
+  margin-left: 120px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.6s;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+/* Dropdown container styling */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown content hidden initially */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #adef7b;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 6px;
+  text-align: center;
+  font-family: lato;
+}
+
+/* Dropdown content links */
+.dropdown-content a {
+  color: rgb(56, 39, 39);
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Optionally, style the dropdown button */
+.dropbtn {
+  cursor: pointer;
 }
 
 /*Back btn*/
@@ -43,11 +128,6 @@ button:hover {
   background-color: #333;
 }
 
-.logo {
-  background-size: contain;
-  width: 240px;
-  margin-left: 15px;
-}
 /* Main Content Styles */
 .main-content {
   display: flex;
